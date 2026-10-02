@@ -1,0 +1,1940 @@
+[
+  {
+    "item_id": "00000001-0000-0000-0000-000000000001",
+    "title": "NexSave Classic Savings Account Features & Minimum Balance",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "NexSave Classic provides everyday digital banking with 3.50% annualized interest and low MAB requirements.",
+      "full_text": "NexSave Classic is designed for salaried and retail individuals. It offers an annual interest rate of 3.50% calculated daily on end-of-day balances and credited quarterly. The account requires a Minimum Average Balance (MAB) of ₹5,000 for Metro/Urban branches and ₹2,500 for Semi-Urban/Rural branches. Account holders receive a complimentary NexBank Classic Visa debit card with daily ATM withdrawal limit of ₹40,000 and online POS limit of ₹1,00,000. Free unlimited NEFT, RTGS, and UPI digital transactions via mobile and net banking.",
+      "structured_attributes": {
+        "interest_rate_pct": 3.50,
+        "mab_metro_inr": 5000,
+        "mab_rural_inr": 2500,
+        "atm_daily_limit_inr": 40000,
+        "pos_daily_limit_inr": 100000
+      },
+      "disclaimer_text": "Interest rates are subject to change based on RBI Monetary Policy guidelines. MAB non-maintenance attracts penalty charges."
+    },
+    "version": "1.2.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/DBR/2025-26/12",
+      "statutory_mandate": false,
+      "compliance_notes": "Standard retail savings disclosure terms"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["RETAIL", "ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "product.savings@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-28T10:00:00Z",
+      "content_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000002",
+    "title": "NexSave Premier Wealth Savings Account Privileges",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Premier tiered account with zero balance non-maintenance penalty and dedicated relationship management.",
+      "full_text": "NexSave Premier Wealth offers high-net-worth customers tier-1 benefits including 4.00% interest on balances above ₹10 Lakhs, zero non-maintenance fees with Total Relationship Value (TRV) of ₹5 Lakhs, complimentary NexBank Metal Visa Infinite Debit Card with unlimited worldwide ATM withdrawals, unlimited domestic and international airport lounge access, and dedicated Wealth Manager access.",
+      "structured_attributes": {
+        "interest_rate_tier2_pct": 4.00,
+        "trv_requirement_inr": 500000,
+        "atm_unlimited_free": true,
+        "card_type": "Metal Visa Infinite"
+      },
+      "disclaimer_text": "Exclusive for Premier segment customers. TRV includes balances across savings, fixed deposits, and mutual funds."
+    },
+    "version": "1.1.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Wealth banking product terms"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["PREMIER_WEALTH", "ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "product.wealth@nexbank.com",
+      "compliance_approver_id": "compliance.wealth@nexbank.com",
+      "approval_timestamp": "2025-12-29T11:00:00Z",
+      "content_hash": "b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000003",
+    "title": "NexSave Salary Select Corporate Account Benefits",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Zero balance salary account for corporate employees with complimentary personal accident cover.",
+      "full_text": "NexSave Salary Select is a true zero-balance account for corporate employees with active monthly salary credits. Features include zero minimum balance requirements, complimentary ₹30 Lakh personal air accident insurance, ₹10 Lakh accidental death cover, 10 free non-NexBank ATM withdrawals per month, and pre-approved personal loans after 3 consecutive monthly salary credits.",
+      "structured_attributes": {
+        "mab_requirement": 0,
+        "air_accident_cover_inr": 3000000,
+        "accidental_death_cover_inr": 1000000,
+        "free_external_atm_txns": 10
+      },
+      "disclaimer_text": "Account converts to standard savings with MAB requirement if salary is not credited for 3 consecutive months."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Corporate salary agreement schedule"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["RETAIL", "ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "product.corporate@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-30T14:30:00Z",
+      "content_hash": "c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000004",
+    "title": "NexSave Basic BSBD Account (Financial Inclusion)",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Zero balance financial inclusion account mandated under RBI Pradhan Mantri Jan Dhan Yojana.",
+      "full_text": "NexBank Basic Savings Bank Deposit (BSBD) account offers universal banking access with zero initial deposit and no minimum balance obligation. Account holders receive a RuPay Classic debit card. The account permits up to 4 free cash withdrawals per month (including ATM and branch withdrawals). No charges are levied on non-operative accounts or passbook issuances.",
+      "structured_attributes": {
+        "mab_requirement": 0,
+        "card_network": "RuPay Classic",
+        "free_monthly_withdrawals": 4,
+        "cheque_facility": false
+      },
+      "disclaimer_text": "Individuals cannot hold another savings account with NexBank while maintaining a BSBD account."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2012-13/164",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory RBI BSBD guidelines"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["RETAIL", "ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "product.inclusion@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-20T09:00:00Z",
+      "content_hash": "d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000005",
+    "title": "NexSave Minimum Average Balance (MAB) Non-Maintenance Penalty Schedule",
+    "category": "INTEREST_RATES_FEES",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Graduated fee structure for failure to maintain monthly average balance in retail savings.",
+      "full_text": "If the monthly average balance falls below ₹5,000 in Metro branches: Shortfall up to 50% incurs a penalty of ₹150 + GST; Shortfall between 50% and 75% incurs ₹250 + GST; Shortfall greater than 75% incurs ₹350 + GST. In accordance with RBI directives, the penalty is proportional to the shortfall and the account balance will never be turned into a negative balance due to levy of non-maintenance charges.",
+      "structured_attributes": {
+        "max_penalty_inr": 350,
+        "gst_rate_pct": 18,
+        "negative_balance_prohibited": true
+      },
+      "disclaimer_text": "Charges will not be levied without sending prior intimation by SMS/Email allowing 30 days to restore balance."
+    },
+    "version": "2.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2014-15/308",
+      "statutory_mandate": true,
+      "compliance_notes": "RBI mandatory rules on non-maintenance of minimum balance"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["RETAIL", "ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "policy.operations@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-22T15:00:00Z",
+      "content_hash": "e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000006",
+    "title": "NexFD Fixed Deposit Interest Rate Matrix (Domestic Retail)",
+    "category": "INTEREST_RATES_FEES",
+    "sub_category": "FIXED_RECURRING_DEPOSITS",
+    "content": {
+      "summary": "Current annualized yield sheet for retail Fixed Deposits across tenures from 7 days to 10 years.",
+      "full_text": "NexBank domestic retail Fixed Deposit interest rates for deposits under ₹2 Crores: 7 to 29 days: 3.50%; 30 to 90 days: 4.50%; 91 to 180 days: 5.50%; 181 to 364 days: 6.25%; 1 year to under 2 years: 7.10%; 400 Days Festive Special Scheme: 7.60%; 2 years to 3 years: 7.25%; 3 years to 5 years: 6.90%; 5 years to 10 years: 6.80%. Compounded quarterly. Premature withdrawal penalty is 0.50% on applicable rate for tenure held.",
+      "structured_attributes": {
+        "rate_1_year_pct": 7.10,
+        "rate_400_days_pct": 7.60,
+        "rate_5_year_pct": 6.80,
+        "compounding_frequency": "QUARTERLY",
+        "premature_penalty_pct": 0.50
+      },
+      "disclaimer_text": "Rates effective October 2026. Subject to revision without prior notice."
+    },
+    "version": "2026.10.1",
+    "effective_date": "2026-10-01T00:00:00Z",
+    "expiry_date": "2026-12-31T23:59:59Z",
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2026-27/DIR-FD-04",
+      "statutory_mandate": false,
+      "compliance_notes": "Published rate card"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 3600,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "treasury.rates@nexbank.com",
+      "compliance_approver_id": "compliance.treasury@nexbank.com",
+      "approval_timestamp": "2026-10-01T08:00:00Z",
+      "content_hash": "f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000007",
+    "title": "NexFD Senior Citizen Extra Spread & Care Scheme",
+    "category": "INTEREST_RATES_FEES",
+    "sub_category": "FIXED_RECURRING_DEPOSITS",
+    "content": {
+      "summary": "Additional 0.50% to 0.75% interest premium for resident senior citizens aged 60 years and above.",
+      "full_text": "Resident Indian senior citizens (age 60 and above) receive an additional 0.50% per annum over standard card rates on all tenures up to 5 years. For tenures exceeding 5 years up to 10 years under the NexCare Senior Scheme, an additional premium of 0.75% is applied (effective yield 7.55% p.a.). Super senior citizens (age 80 and above) receive an extra 0.80% on 3-year tenures.",
+      "structured_attributes": {
+        "senior_spread_under_5yr_pct": 0.50,
+        "senior_spread_over_5yr_pct": 0.75,
+        "min_age_senior": 60,
+        "min_age_super_senior": 80
+      },
+      "disclaimer_text": "Age proof (Aadhaar/PAN/Passport) mandatory. Special senior rate not applicable to NRE/NRO deposits."
+    },
+    "version": "2026.10.1",
+    "effective_date": "2026-10-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Senior citizen benefit policy"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 3600,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "treasury.rates@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2026-10-01T08:30:00Z",
+      "content_hash": "0718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f7"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000008",
+    "title": "NexFD Tax Saver Fixed Deposit (Section 80C)",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "FIXED_RECURRING_DEPOSITS",
+    "content": {
+      "summary": "5-year statutory lock-in deposit eligible for tax deduction up to ₹1,50,000 under Section 80C of IT Act.",
+      "full_text": "NexFD Tax Saver allows resident individuals and HUFs to claim tax deductions up to ₹1,50,000 under Section 80C. The deposit has a mandatory 5-year lock-in period during which premature encashment and loan/overdraft facilities are strictly prohibited. Interest rate is 6.90% for general public and 7.40% for senior citizens. TDS is applicable on interest income unless Form 15G/15H is submitted.",
+      "structured_attributes": {
+        "statutory_lock_in_years": 5,
+        "max_deduction_inr": 150000,
+        "premature_withdrawal_allowed": false,
+        "loan_facility_allowed": false
+      },
+      "disclaimer_text": "Tax treatment is based on applicable tax laws. Consult your tax advisor."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "GOI_FINANCE",
+      "circular_reference": "CBDT/Notification/80C",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory Income Tax Act compliance"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "product.deposits@nexbank.com",
+      "compliance_approver_id": "compliance.tax@nexbank.com",
+      "approval_timestamp": "2025-12-20T12:00:00Z",
+      "content_hash": "18293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000009",
+    "title": "NexFlexi Recurring Deposit (RD) Terms & Standing Instructions",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "FIXED_RECURRING_DEPOSITS",
+    "content": {
+      "summary": "Monthly systematic deposit plan from ₹500 upwards with flexible installment step-up options.",
+      "full_text": "NexFlexi Recurring Deposit lets customers build savings systematically through monthly contributions ranging from ₹500 to ₹1,00,000 for tenures between 6 months and 10 years. Customers can deposit up to 3 times their core monthly commitment in any month without penalty. Interest rates match standard retail FD rates for equivalent tenures. Standing instruction failures incur a grace period of 5 days before a nominal ₹10 per ₹1,000 late fee is charged.",
+      "structured_attributes": {
+        "min_monthly_deposit_inr": 500,
+        "max_monthly_deposit_inr": 100000,
+        "min_tenure_months": 6,
+        "max_tenure_months": 120
+      },
+      "disclaimer_text": "Premature closure rates are subject to 0.50% penalty on the rate for the actual duration completed."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Standard RD product rules"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "product.deposits@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-21T10:00:00Z",
+      "content_hash": "293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f70819"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000010",
+    "title": "NexFD Premature Liquidation & Loan Against Deposit Policy",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "FIXED_RECURRING_DEPOSITS",
+    "content": {
+      "summary": "Rules for partial withdrawal, instant online loan against FD up to 90% of deposit value.",
+      "full_text": "Customers can instantly borrow up to 90% of their principal FD value through an overdraft/loan against FD via net banking without breaking the deposit. The interest charged is exactly 1.00% above the contracted deposit rate. For outright premature liquidation: Deposits held less than 7 days earn zero interest. Deposits held 7 days or more receive the contracted rate or the rate applicable for the tenure completed (whichever is lower) minus a 0.50% penalty.",
+      "structured_attributes": {
+        "max_loan_against_fd_pct": 90,
+        "loan_spread_over_fd_rate_pct": 1.00,
+        "min_days_for_interest": 7,
+        "premature_penalty_pct": 0.50
+      },
+      "disclaimer_text": "Tax Saver FDs cannot be pledged for loans or prematurely liquidated before 5 years."
+    },
+    "version": "1.1.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2019-20/FD-LOAN-01",
+      "statutory_mandate": false,
+      "compliance_notes": "Lending against deposits directive"
+    },
+    "required_auth_level": "OTP_VERIFIED",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "credit.retail@nexbank.com",
+      "compliance_approver_id": "compliance.credit@nexbank.com",
+      "approval_timestamp": "2025-12-23T11:00:00Z",
+      "content_hash": "3a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000011",
+    "title": "NexCredit Classic Credit Card Features & Charges",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Entry-level cashback credit card with zero annual fee on spends above ₹50,000.",
+      "full_text": "NexCredit Classic is tailored for young professionals. Annual membership fee is ₹499 + GST, waived on annual spends of ₹50,000. Offers 1.5% unlimited cashback on online food delivery and movie bookings, and 0.75% on all other domestic spends. Standard interest finance charge is 3.50% per month (42% annualized APR) on revolving credit balances. Interest-free grace period is up to 50 days from billing date.",
+      "structured_attributes": {
+        "annual_fee_inr": 499,
+        "fee_waiver_spend_inr": 50000,
+        "monthly_finance_charge_pct": 3.50,
+        "annual_apr_pct": 42.0,
+        "max_grace_period_days": 50
+      },
+      "disclaimer_text": "Finance charges apply if Total Amount Due is not paid in full by Due Date."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2022-23/92/DOR.AUT.REC.No.27/24.01.041/2022-23",
+      "statutory_mandate": true,
+      "compliance_notes": "Master Direction on Credit Card and Debit Card Issuance"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.product@nexbank.com",
+      "compliance_approver_id": "compliance.cards@nexbank.com",
+      "approval_timestamp": "2025-12-24T16:00:00Z",
+      "content_hash": "4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000012",
+    "title": "NexCredit Platinum Rewards Card Privileges",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Mid-tier rewards card offering 4X points on dining and travel, plus domestic lounge access.",
+      "full_text": "NexCredit Platinum annual fee is ₹1,499 + GST (waived on ₹1.5 Lakh annual spend). Features include 4 reward points per ₹150 spent on dining, hotels, and international transactions; 2 points per ₹150 on utility and grocery; 2 complimentary domestic airport lounge visits per calendar quarter upon spending ₹10,000 in the previous calendar quarter. Lower finance charge of 3.25% per month (39% APR).",
+      "structured_attributes": {
+        "annual_fee_inr": 1499,
+        "fee_waiver_spend_inr": 150000,
+        "lounge_visits_quarterly": 2,
+        "monthly_finance_charge_pct": 3.25
+      },
+      "disclaimer_text": "Lounge visits require prior quarter spend qualification per bank policy."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Card product schedule"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.product@nexbank.com",
+      "compliance_approver_id": "compliance.cards@nexbank.com",
+      "approval_timestamp": "2025-12-24T16:30:00Z",
+      "content_hash": "5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000013",
+    "title": "NexCredit Signature Metal Luxury Card",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Ultra-premium metal card with 1% forex markup, global concierge, and golf access.",
+      "full_text": "NexCredit Signature Metal is available by invitation or for Premier Wealth clients. Annual fee is ₹4,999 + GST (waived on ₹5 Lakh annual spend). Key benefits: low 1.00% foreign currency markup fee (compared to industry standard 3.50%), unlimited international Priority Pass lounge visits for primary cardholder, 12 complimentary golf rounds per year, and 24/7 dedicated global concierge services.",
+      "structured_attributes": {
+        "annual_fee_inr": 4999,
+        "forex_markup_pct": 1.00,
+        "lounge_access": "UNLIMITED_PRIORITY_PASS",
+        "monthly_finance_charge_pct": 2.99
+      },
+      "disclaimer_text": "Forex markup subject to applicable GST on currency conversion services."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Luxury card terms"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["PREMIER_WEALTH", "ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.premium@nexbank.com",
+      "compliance_approver_id": "compliance.wealth@nexbank.com",
+      "approval_timestamp": "2025-12-26T10:00:00Z",
+      "content_hash": "6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000014",
+    "title": "NexCredit Billing Cycle, Most Important Terms and Conditions (MITC)",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Mandatory disclosure of Minimum Amount Due (MAD), late payment charges, and allocation rules.",
+      "full_text": "In accordance with RBI directions, Minimum Amount Due (MAD) is calculated as: 100% of all taxes, fees, EMI installments, and over-limit amounts + 5% of remaining principal spend balance. Late payment fee is tiered: ₹0 for balance up to ₹500; ₹400 for balance ₹501-₹5,000; ₹750 for balance ₹5,001-₹10,000; ₹1,000 for balance above ₹10,000. Cardholders have the option to modify their monthly billing cycle date once.",
+      "structured_attributes": {
+        "mad_principal_pct": 5.0,
+        "max_late_fee_inr": 1000,
+        "billing_cycle_change_allowed": true
+      },
+      "disclaimer_text": "Paying only the Minimum Amount Due will result in interest compounding on unpaid balances."
+    },
+    "version": "2.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2022-23/92",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory MITC publication"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.policy@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-27T11:00:00Z",
+      "content_hash": "7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000015",
+    "title": "NexCredit EMI Conversion Scheme & Foreclosure Charges",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Rules for converting retail transactions above ₹2,500 into 3 to 24 month EMIs.",
+      "full_text": "Credit card transactions of ₹2,500 and above can be converted into Merchant EMI or Post-Purchase Balance EMI via the mobile app within 25 days of purchase. Tenure options: 3, 6, 9, 12, 18, and 24 months. Interest rate ranges from 13.50% to 15.00% p.a. on reducing balance. One-time processing fee of 1.50% (min ₹150, max ₹1,000) + GST applies. Foreclosure fee: 3.00% on outstanding principal if closed before maturity.",
+      "structured_attributes": {
+        "min_transaction_inr": 2500,
+        "min_interest_rate_pct": 13.50,
+        "max_interest_rate_pct": 15.00,
+        "processing_fee_pct": 1.50,
+        "foreclosure_fee_pct": 3.00
+      },
+      "disclaimer_text": "Gold/jewelry transactions and cash advances are strictly ineligible for EMI conversion."
+    },
+    "version": "1.2.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Credit installment policy"
+    },
+    "required_auth_level": "OTP_VERIFIED",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.emi@nexbank.com",
+      "compliance_approver_id": "compliance.cards@nexbank.com",
+      "approval_timestamp": "2025-12-28T14:00:00Z",
+      "content_hash": "8f90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000016",
+    "title": "NexHome Loan Floating Rate Linked to EBLR (Repo Rate)",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "HOME_LOANS",
+    "content": {
+      "summary": "External Benchmark Linked Rate (EBLR) home loans starting at 8.35% p.a. for prime salaried borrowers.",
+      "full_text": "NexHome Loan interest rates are linked to the RBI Repo Rate (External Benchmark Lending Rate - EBLR). Current NexBank EBLR is 6.50% (Repo Rate) + 1.85% (Spread) = 8.35% p.a. for borrowers with CIBIL score 750 and above. Loan tenure ranges from 5 to 30 years. Up to 80% financing on property agreement value (LTV). Zero prepayment and foreclosure penalty for individual floating rate borrowers per RBI mandate.",
+      "structured_attributes": {
+        "current_repo_rate_pct": 6.50,
+        "spread_prime_pct": 1.85,
+        "effective_roi_pct": 8.35,
+        "max_tenure_years": 30,
+        "prepayment_charges": 0
+      },
+      "disclaimer_text": "Interest rates reset automatically within 3 business days of any RBI Repo Rate revision."
+    },
+    "version": "2026.10.1",
+    "effective_date": "2026-10-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2019-20/60/DBR.DIR.BC.No.14/07.01.001/2019-20",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory EBLR mandatory linking for retail loans"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 3600,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "loans.mortgage@nexbank.com",
+      "compliance_approver_id": "compliance.lending@nexbank.com",
+      "approval_timestamp": "2026-10-01T09:00:00Z",
+      "content_hash": "90a1b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f80"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000017",
+    "title": "NexHome Loan Balance Transfer & Top-Up Facility",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "HOME_LOANS",
+    "content": {
+      "summary": "Refinance high-cost home loans from other lenders with additional top-up credit up to ₹50 Lakhs.",
+      "full_text": "Borrowers holding active home loans with other scheduled commercial banks or HFCs for at least 12 months with clean repayment history can transfer their outstanding balance to NexBank to benefit from lower EBLR rates. Concurrently, eligible borrowers can avail a NexHome Top-Up loan up to ₹50 Lakhs at home loan parity rates for home renovation, education, or personal needs.",
+      "structured_attributes": {
+        "min_vintage_months": 12,
+        "max_top_up_amount_inr": 5000000,
+        "processing_fee_flat_inr": 5000
+      },
+      "disclaimer_text": "Subject to legal and technical property verification. MODT stamp duty charges payable as per State laws."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Mortgage refinancing rules"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "loans.mortgage@nexbank.com",
+      "compliance_approver_id": "compliance.lending@nexbank.com",
+      "approval_timestamp": "2025-12-22T10:00:00Z",
+      "content_hash": "01b2c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000018",
+    "title": "Nex Personal Loan Instant Pre-Approved Digital Disbursal",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "PERSONAL_LOANS",
+    "content": {
+      "summary": "100% digital unsecured personal loan up to ₹15 Lakhs disbursed in 10 minutes for pre-approved customers.",
+      "full_text": "Nex Personal Loan offers instant collateral-free financing from ₹50,000 to ₹15,00,000 for pre-approved salaried and self-employed customers. Repayment tenure ranges from 12 to 60 months. Fixed interest rates start at 10.49% p.a. Processing fee: 1.50% + GST. Complete paperless onboarding via digital KYC (Video KYC) and e-NACH mandate. Part-prepayment allowed up to 25% of principal once per financial year without penalty.",
+      "structured_attributes": {
+        "min_amount_inr": 50000,
+        "max_amount_inr": 1500000,
+        "min_tenure_months": 12,
+        "max_tenure_months": 60,
+        "min_interest_rate_pct": 10.49
+      },
+      "disclaimer_text": "All loans subject to underwriting risk evaluation. Late payment attracts penal interest of 2% per month."
+    },
+    "version": "1.1.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2022-23/111",
+      "statutory_mandate": true,
+      "compliance_notes": "Digital Lending Guidelines compliance"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "loans.personal@nexbank.com",
+      "compliance_approver_id": "compliance.lending@nexbank.com",
+      "approval_timestamp": "2025-12-25T11:00:00Z",
+      "content_hash": "12c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000019",
+    "title": "NexGold Express Gold Loan Scheme & Valuation Standards",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "GOLD_LOANS",
+    "content": {
+      "summary": "Instant liquidity against 18-22 karat gold ornaments with LTV up to 75% per RBI directives.",
+      "full_text": "NexGold Express offers immediate cash against gold jewelry with loan amounts from ₹25,000 to ₹50,00,000 disbursed across bank branches within 30 minutes. Regulated Loan-to-Value (LTV) is capped at 75% of net gold weight valued against the IBJA 30-day closing average price. Interest rate starts at 8.75% p.a. Ornaments are stored in bank grade-IV electronic vault safes under full bank insurance cover.",
+      "structured_attributes": {
+        "max_ltv_pct": 75.0,
+        "min_karat_purity": 18,
+        "max_karat_purity": 22,
+        "min_interest_rate_pct": 8.75
+      },
+      "disclaimer_text": "Purity evaluated by certified assayer. Only jewelry accepted; gold bars and coins above 50g prohibited per RBI."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2013-14/521",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory gold loan guidelines"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "loans.gold@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-26T12:00:00Z",
+      "content_hash": "23c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000020",
+    "title": "NexProtect Life & Term Insurance Bancassurance Offerings",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "INSURANCE_BANCASSURANCE",
+    "content": {
+      "summary": "Pure protection term plans offering up to ₹2 Crore cover with terminal illness benefits.",
+      "full_text": "Distributed in partnership with IRDAI-registered life insurance partner HDFC Life / ICICI Prudential. NexProtect Pure Term Plan offers life coverage up to age 85 with guaranteed death benefit payout, optional critical illness rider covering 64 conditions, and 100% waiver of premium upon accidental permanent disability. Tax benefits under Section 80C and Section 10(10D) of Income Tax Act.",
+      "structured_attributes": {
+        "min_sum_assured_inr": 2500000,
+        "max_entry_age": 65,
+        "corporate_agent_license": "IRDAI/CA/NEXB/2024"
+      },
+      "disclaimer_text": "Insurance is underwritten by partner insurer. NexBank acts solely as a corporate agent. Risk factors specified in policy document."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "IRDAI",
+      "circular_reference": "IRDAI/BANCASSURANCE/2024",
+      "statutory_mandate": true,
+      "compliance_notes": "Corporate agent disclosure mandatory"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "insurance.life@nexbank.com",
+      "compliance_approver_id": "compliance.insurance@nexbank.com",
+      "approval_timestamp": "2025-12-27T09:00:00Z",
+      "content_hash": "34c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000021",
+    "title": "NexInvest Mutual Fund Platform Execution & Cutoff Times",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "MUTUAL_FUNDS_WEALTH",
+    "content": {
+      "summary": "SEBI-regulated execution cutoffs for same-day NAV allocation on liquid, equity, and debt funds.",
+      "full_text": "NexInvest operates as a SEBI-registered Mutual Fund Distributor (AMFI ARN-99120). Cutoff times for same-day NAV under SEBI rules: Liquid and Overnight Funds: 1:30 PM (funds must be realized in AMC account); Equity and Debt Schemes: 3:00 PM (funds realization required per SEBI circular). Orders placed after cutoff or on weekends receive NAV of the next business day. Minimum SIP amount is ₹500/month.",
+      "structured_attributes": {
+        "liquid_cutoff_time": "13:30 IST",
+        "equity_debt_cutoff_time": "15:00 IST",
+        "min_sip_amount_inr": 500,
+        "arn_code": "ARN-99120"
+      },
+      "disclaimer_text": "Mutual fund investments are subject to market risks, read all scheme related documents carefully."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "SEBI",
+      "circular_reference": "SEBI/HO/IMD/DF2/CIR/P/2020/175",
+      "statutory_mandate": true,
+      "compliance_notes": "SEBI mandatory realization and NAV cutoff norms"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 3600,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "wealth.mutualfunds@nexbank.com",
+      "compliance_approver_id": "compliance.sebi@nexbank.com",
+      "approval_timestamp": "2025-12-28T10:00:00Z",
+      "content_hash": "45c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000022",
+    "title": "RBI Harmonization of Turnaround Time (TAT) and Customer Compensation for Failed Transactions",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "UPI_DIGITAL_PAYMENTS",
+    "content": {
+      "summary": "Mandatory auto-reversal timeline (T+1 day) and statutory compensation of ₹100/day for delayed reversal.",
+      "full_text": "Pursuant to RBI Circular DPSS.CO.PD No.629/02.01.014/2019-20 on Harmonization of Turnaround Time: For failed UPI and IMPS transactions where customer account is debited but beneficiary is not credited, auto-reversal must complete within T + 1 business day. If the bank fails to reverse within T + 1 day, the bank is mandated to pay statutory compensation of ₹100 per day of delay directly into the customer's account without requiring a formal claim.",
+      "structured_attributes": {
+        "mandated_tat_days": 1,
+        "daily_compensation_penalty_inr": 100,
+        "requires_customer_claim": false
+      },
+      "disclaimer_text": "T represents the transaction date. Compensation applies automatically upon TAT breach."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "DPSS.CO.PD No.629/02.01.014/2019-20",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory RBI compensation framework"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "compliance.regulatory@nexbank.com",
+      "compliance_approver_id": "legal.general@nexbank.com",
+      "approval_timestamp": "2025-12-15T10:00:00Z",
+      "content_hash": "56c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000023",
+    "title": "RBI Digital Lending Guidelines (DLG) & Key Fact Statement (KFS)",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "PERSONAL_LOANS",
+    "content": {
+      "summary": "Mandatory provision of Key Fact Statement, 3-day cooling-off exit window, and ethical recovery code.",
+      "full_text": "In compliance with RBI Guidelines on Digital Lending: 1. All digital loans must provide an explicit Key Fact Statement (KFS) stating All-Inclusive APR before loan execution. 2. A mandatory cooling-off / look-up period of 3 business days is provided during which the borrower can exit the loan without penalty by returning principal and proportionate APR. 3. Loan disbursals and repayments occur strictly between bank account and borrower without pass-through third-party pooling accounts.",
+      "structured_attributes": {
+        "cooling_off_period_days": 3,
+        "kfs_mandatory": true,
+        "third_party_pool_prohibited": true
+      },
+      "disclaimer_text": "Borrowers have the right to revoke consent for biometric/data usage under DLG guidelines."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2022-23/111/DOR.CRE.REC.66/21.07.001/2022-23",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory Digital Lending Guidelines"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "compliance.lending@nexbank.com",
+      "compliance_approver_id": "legal.general@nexbank.com",
+      "approval_timestamp": "2025-12-16T11:00:00Z",
+      "content_hash": "67c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000024",
+    "title": "PCI DSS v4.0 Cardholder Data Masking & Encryption Requirements",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "FRAUD_CYBER_DEFENSE",
+    "content": {
+      "summary": "Mandatory masking of Primary Account Number (PAN) and zero retention of sensitive authentication data (SAD).",
+      "full_text": "Under PCI-DSS v4.0 Requirement 3: Full 16-digit card numbers must never be displayed in human-readable plain text across chat channels, agent screens, or system logs. Displays must truncate PAN to maximum first 6 and last 4 digits (NexBank policy enforces last 4 digits only). Sensitive Authentication Data (SAD) including full card CVV/CVC and card PINs must never be stored post-authorization under any circumstances.",
+      "structured_attributes": {
+        "max_visible_digits": 4,
+        "cvv_storage_permitted": false,
+        "pin_storage_permitted": false,
+        "encryption_standard": "AES-256-GCM"
+      },
+      "disclaimer_text": "Bank personnel are strictly prohibited from asking for CVV, OTP, or PIN."
+    },
+    "version": "4.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "PCI_DSS",
+      "circular_reference": "PCI-DSS-V4-REQ3",
+      "statutory_mandate": true,
+      "compliance_notes": "PCI Security Standards Council audit mandate"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "infosec.pci@nexbank.com",
+      "compliance_approver_id": "ciso.office@nexbank.com",
+      "approval_timestamp": "2025-12-18T14:00:00Z",
+      "content_hash": "78c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000025",
+    "title": "Reserve Bank - Integrated Ombudsman Scheme (RB-IOS) Escalation Procedure",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "GRIEVANCE_REDRESSAL",
+    "content": {
+      "summary": "Statutory 3-tier grievance escalation hierarchy: Branch/Nodal Officer (30 days) to RBI Ombudsman.",
+      "full_text": "Under the Reserve Bank - Integrated Ombudsman Scheme (RB-IOS): 1. Level 1: Customer care / Branch grievance resolution within 7 business days. 2. Level 2: Escalation to NexBank Principal Nodal Officer (PNO) with resolution within 14 business days. 3. Level 3 (RBI Ombudsman): If the bank fails to resolve the complaint within 30 calendar days, or if the customer is dissatisfied with the resolution, the customer can file an appeal free of cost at https://cms.rbi.org.in.",
+      "structured_attributes": {
+        "internal_resolution_max_days": 30,
+        "ombudsman_filing_fee_inr": 0,
+        "ombudsman_portal": "https://cms.rbi.org.in"
+      },
+      "disclaimer_text": "Complaints under dispute before courts or arbitral tribunals are excluded from Ombudsman jurisdiction."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2021-22/126/CEPC.PSD.No.S73/13.01.001/2021-22",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory RBI Integrated Ombudsman Scheme"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "compliance.grievance@nexbank.com",
+      "compliance_approver_id": "legal.general@nexbank.com",
+      "approval_timestamp": "2025-12-19T10:00:00Z",
+      "content_hash": "89c3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000026",
+    "title": "DICGC Deposit Insurance Coverage Terms (₹5 Lakh Protection)",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Statutory guarantee covering principal and interest up to ₹5,00,000 per depositor under DICGC Act.",
+      "full_text": "NexBank is registered with the Deposit Insurance and Credit Guarantee Corporation (DICGC). All resident and non-resident deposit accounts (Savings, Fixed, Current, and Recurring Deposits) are insured up to a maximum limit of ₹5,00,000 (Rupees Five Lakhs) for both principal and accrued interest per depositor across all branches of NexBank held in the same right and capacity.",
+      "structured_attributes": {
+        "insurance_coverage_limit_inr": 500000,
+        "eligible_deposit_types": ["SAVINGS", "CURRENT", "FD", "RD"],
+        "corporation_name": "DICGC"
+      },
+      "disclaimer_text": "Deposits maintained in separate legal capacities (e.g., individual vs. partnership) are insured separately."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "DICGC/Act-1961/Section-16",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory deposit insurance disclosure"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "compliance.regulatory@nexbank.com",
+      "compliance_approver_id": "legal.general@nexbank.com",
+      "approval_timestamp": "2025-12-15T12:00:00Z",
+      "content_hash": "9ac3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000027",
+    "title": "Periodic Re-KYC Compliance Norms & Risk Categorization",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Mandatory customer profile re-verification frequency: High risk (2 yrs), Medium (8 yrs), Low (10 yrs).",
+      "full_text": "Under Prevention of Money Laundering Act (PMLA) and RBI Master Direction on KYC: NexBank categorizes customers into three risk bands. Periodic Re-KYC is mandatory every 2 years for High-Risk customers, every 8 years for Medium-Risk customers, and every 10 years for Low-Risk customers. Low-risk customers can complete Re-KYC digitally via self-declaration in mobile banking if there is no change in address.",
+      "structured_attributes": {
+        "high_risk_frequency_years": 2,
+        "medium_risk_frequency_years": 8,
+        "low_risk_frequency_years": 10,
+        "digital_rekyc_allowed_low_risk": true
+      },
+      "disclaimer_text": "Non-compliance with Re-KYC notices after 90 days grace period leads to partial freezing of account debits."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/DBR/2015-16/18/Master-Direction-KYC",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory PMLA KYC periodic update"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "compliance.aml@nexbank.com",
+      "compliance_approver_id": "camo.aml@nexbank.com",
+      "approval_timestamp": "2025-12-16T15:00:00Z",
+      "content_hash": "abc3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000028",
+    "title": "Positive Pay System (PPS) for High-Value Cheque Clearances",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Mandatory prior electronic verification of cheque details for clearing values of ₹50,000 and above.",
+      "full_text": "Under RBI Positive Pay System (PPS) circular: Customers issuing cheques of ₹50,000 and above are advised, and cheques of ₹5,00,000 and above are mandated, to submit key cheque details (Cheque Number, Date, Payee Name, Amount, and Account Number) via mobile banking, net banking, or SMS prior to presenting the cheque for clearing. Cheques failing PPS confirmation at ₹5 Lakh threshold will be rejected in CTS clearing.",
+      "structured_attributes": {
+        "pps_advised_threshold_inr": 50000,
+        "pps_mandatory_threshold_inr": 500000,
+        "submission_channels": ["MOBILE_APP", "NET_BANKING", "BRANCH", "SMS"]
+      },
+      "disclaimer_text": "Cheques lacking PPS confirmation are ineligible for CTS dispute redressal mechanism."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2020-21/41/DPSS.CO.RPPD.No.509/04.07.05/2020-21",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory Positive Pay mechanism"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "clearing.operations@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-17T11:00:00Z",
+      "content_hash": "bcd3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000029",
+    "title": "Customer Liability in Unauthorized Electronic Banking Transactions (Zero Liability Policy)",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "FRAUD_CYBER_DEFENSE",
+    "content": {
+      "summary": "Zero liability for customer if fraud is reported within 3 working days of notification.",
+      "full_text": "In compliance with RBI circular on Limiting Liability of Customers: 1. Zero Liability applies if unauthorized fraud occurs due to bank contributory fraud/negligence OR third-party breach where customer reports within 3 working days of receiving the SMS/email alert. 2. Limited Liability applies if reported between 4 to 7 working days (max liability capped between ₹5,000 to ₹25,000 depending on account tier). 3. Customer bears full loss if customer shared credentials (OTP/PIN/password) or reported after 7 days.",
+      "structured_attributes": {
+        "zero_liability_reporting_window_days": 3,
+        "limited_liability_window_days": 7,
+        "max_basic_liability_inr": 5000,
+        "max_premier_liability_inr": 25000
+      },
+      "disclaimer_text": "Immediate reporting via bank 24/7 fraud helpline is required to secure zero liability protection."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2017-18/15/DBR.No.Leg.BC.78/09.07.005/2017-18",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory customer electronic fraud liability framework"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "fraud.losscontrol@nexbank.com",
+      "compliance_approver_id": "legal.general@nexbank.com",
+      "approval_timestamp": "2025-12-18T10:00:00Z",
+      "content_hash": "cde3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000030",
+    "title": "NEFT & RTGS Operating Hours, Batches, and Settlement Cutoffs",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "NEFT_RTGS_SETTLEMENTS",
+    "content": {
+      "summary": "24x7x365 availability of interbank electronic clearing with zero charges on digital outward transfers.",
+      "full_text": "Both NEFT and RTGS systems operate on a 24x7x365 round-the-clock basis. NEFT operates in half-hourly settlement batches throughout the day. RTGS provides continuous gross settlement for high-value transactions of ₹2,00,000 and above. In accordance with RBI policy, NexBank levies ₹0.00 service fees on all outward NEFT and RTGS transactions initiated via digital channels (Internet & Mobile Banking).",
+      "structured_attributes": {
+        "availability": "24x7x365",
+        "min_rtgs_amount_inr": 200000,
+        "digital_transaction_fee_inr": 0,
+        "neft_batch_frequency_mins": 30
+      },
+      "disclaimer_text": "Transfers initiated at bank branch counters attract standard service fees as per tariff schedule."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2019-20/115",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory 24x7 NEFT/RTGS mandate"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "payments.settlement@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-18T16:00:00Z",
+      "content_hash": "def3d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000031",
+    "title": "NexBank Debit Card Temporary Lock and Unlock Troubleshooting",
+    "category": "TROUBLESHOOTING_GUIDE",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Step-by-step instructions to instantly freeze or unfreeze a misplaced debit card via app or IVR.",
+      "full_text": "If you misplace your card: 1. Open NexBank Mobile App -> Go to 'Cards' -> Select card ending in your last 4 digits -> Toggle 'Temporary Lock'. 2. To lock via SMS: Send 'LOCK <last 4 digits>' to 567676 from your registered mobile number. 3. Locking stops ATM withdrawals, online e-commerce, and POS swipes immediately. Recurring AutoPay/mandates will continue to process. To unfreeze: Login to app with biometric authentication and toggle 'Unlock'.",
+      "structured_attributes": {
+        "sms_shortcode": "567676",
+        "lock_effect": "INSTANT",
+        "autopay_affected": false
+      },
+      "disclaimer_text": "If card is confirmed stolen, choose 'Permanent Block' instead of temporary lock to prevent reissue fraud."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "INTERNAL_POLICY",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Self-service guide"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "operations.cards@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-19T14:00:00Z",
+      "content_hash": "ef03d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000032",
+    "title": "UPI Transaction Limit & Daily Cap Guidelines",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "UPI_DIGITAL_PAYMENTS",
+    "content": {
+      "summary": "NPCI daily limits: ₹1,00,000 standard limit; ₹5,00,000 for hospitals, educational institutions, and tax.",
+      "full_text": "Under NPCI and NexBank guidelines: Standard peer-to-peer (P2P) and peer-to-merchant (P2M) UPI transactions are capped at ₹1,00,000 per day with a maximum of 20 transactions in a 24-hour rolling window. Higher limits apply: ₹5,00,000 per transaction for approved hospitals, medical healthcare, and accredited educational institutions; ₹2,00,000 for IPO bidding and Retail Direct Government Securities.",
+      "structured_attributes": {
+        "standard_p2p_daily_limit_inr": 100000,
+        "medical_education_limit_inr": 500000,
+        "max_txns_per_day": 20
+      },
+      "disclaimer_text": "New UPI user registrations or SIM changes are subject to a ₹5,000 cap for the first 24 hours."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "NPCI",
+      "circular_reference": "NPCI/UPI/OC-121/2023-24",
+      "statutory_mandate": true,
+      "compliance_notes": "NPCI UPI Operating Guidelines"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "payments.upi@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-20T11:00:00Z",
+      "content_hash": "f013d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000033",
+    "title": "International Debit Card Usage Activation and RBI Tokenization Guidelines",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Mandatory opt-in for international, online, and contactless tap-and-pay transactions.",
+      "full_text": "Per RBI mandate on Card Security Controls: All newly issued debit and credit cards have international transactions, online CNP (card-not-present) transactions, and contactless tap-and-pay disabled by default. Cardholders must actively enable these features and configure custom transaction limits via the NexBank Mobile App or Internet Banking under 'Manage Card Usage'. CoF tokenization replaces card details on merchant sites.",
+      "structured_attributes": {
+        "default_international_status": "DISABLED",
+        "default_online_status": "DISABLED",
+        "default_contactless_status": "DISABLED",
+        "contactless_pinless_limit_inr": 5000
+      },
+      "disclaimer_text": "Contactless transactions above ₹5,000 mandate EMV PIN entry."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2019-20/142",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory card controls mandate"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.security@nexbank.com",
+      "compliance_approver_id": "compliance.cards@nexbank.com",
+      "approval_timestamp": "2025-12-21T14:00:00Z",
+      "content_hash": "0123d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000034",
+    "title": "Nomination Rules & Claim Settlement for Deceased Depositors",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Fast-track settlement of deceased depositor claims within 15 days when valid nominee is registered.",
+      "full_text": "Under Banking Regulation Act, 1949: If a valid nomination exists in the deceased depositor's account, funds are settled to the registered nominee upon submission of the original Death Certificate and nominee KYC within a statutory timeline of 15 days without requiring Succession Certificate or Court Probate up to a limit of ₹50 Lakhs. If no nomination exists, legal heirs must submit indemnity bonds and legal heirship certificates.",
+      "structured_attributes": {
+        "nominee_statutory_settlement_tat_days": 15,
+        "max_settlement_without_probate_inr": 5000000
+      },
+      "disclaimer_text": "Nominee receives funds as a statutory trustee for the benefit of legal heirs."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2005-06/23",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory deceased depositor settlement"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "legal.claims@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-22T16:00:00Z",
+      "content_hash": "1234d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000035",
+    "title": "NexBank Digital Account Dormancy & Inoperative Account Activation",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Accounts without customer-induced transactions for 24 months classified as inoperative; activation is free.",
+      "full_text": "A savings or current account is classified as inoperative / dormant if no customer-induced transaction (cash, transfer, ATM, cheque) occurs for a continuous period of 24 months. Dividend credits and interest credits do not prevent dormancy. Reactivating an inoperative account is completely free of charge. The customer must submit fresh KYC documents and perform a biometric or Video-KYC verification. Balances over 10 years transfer to RBI DEA Fund.",
+      "structured_attributes": {
+        "dormancy_threshold_months": 24,
+        "reactivation_fee_inr": 0,
+        "dea_fund_threshold_years": 10
+      },
+      "disclaimer_text": "Depositor Education and Awareness (DEA) fund balances can be claimed with accrued interest at any time."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2023-24/105/DOR.SOG.REC.64/13.03.000/2023-24",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory inoperative account activation circular"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "operations.accounts@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-23T12:00:00Z",
+      "content_hash": "2345d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000036",
+    "title": "NexInvest Systematic Investment Plan (SIP) Pause and Cancel Policy",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "MUTUAL_FUNDS_WEALTH",
+    "content": {
+      "summary": "Pause mutual fund SIPs for up to 6 months without cancellation fees via mobile app.",
+      "full_text": "Investors can pause an active Systematic Investment Plan (SIP) for 1 to 6 consecutive installments using the 'SIP Pause' feature in NexInvest at least 7 business days prior to the next scheduled installment date. The SIP automatically resumes after the pause period. To permanently cancel an SIP, submit cancellation request 10 days before the due date. No cancellation penalty is levied by NexBank or the mutual fund AMC.",
+      "structured_attributes": {
+        "max_pause_months": 6,
+        "lead_time_days_pause": 7,
+        "lead_time_days_cancel": 10,
+        "cancellation_fee_inr": 0
+      },
+      "disclaimer_text": "Units accumulated prior to cancellation remain invested and continue to earn market returns."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "SEBI",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "MF distribution rules"
+    },
+    "required_auth_level": "OTP_VERIFIED",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "wealth.operations@nexbank.com",
+      "compliance_approver_id": "compliance.sebi@nexbank.com",
+      "approval_timestamp": "2025-12-24T10:00:00Z",
+      "content_hash": "3456d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000037",
+    "title": "NexInvest Equity Linked Savings Scheme (ELSS) Tax Lock-In Rules",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "MUTUAL_FUNDS_WEALTH",
+    "content": {
+      "summary": "3-year statutory lock-in equity mutual fund qualifying for tax relief under Section 80C.",
+      "full_text": "NexInvest ELSS funds provide Section 80C tax deduction up to ₹1,50,000 per financial year. ELSS has the shortest lock-in period (3 years) among all Section 80C tax-saving instruments. Each individual monthly SIP installment is locked in for exactly 3 years from its respective investment date. Long-term capital gains (LTCG) exceeding ₹1.25 Lakh per financial year are taxed at 12.50% without indexation per Finance Act 2024.",
+      "structured_attributes": {
+        "statutory_lock_in_years": 3,
+        "max_80c_deduction_inr": 150000,
+        "ltcg_tax_rate_pct": 12.50,
+        "ltcg_exemption_inr": 125000
+      },
+      "disclaimer_text": "Investments cannot be redeemed before completion of the 3-year statutory lock-in."
+    },
+    "version": "1.1.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "SEBI",
+      "circular_reference": "SEBI/MF/ELSS-2024",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory ELSS tax scheme guidelines"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "wealth.mutualfunds@nexbank.com",
+      "compliance_approver_id": "compliance.tax@nexbank.com",
+      "approval_timestamp": "2025-12-25T14:00:00Z",
+      "content_hash": "4567d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000038",
+    "title": "NexGold Sovereign Gold Bond (SGB) Distribution & Secondary Trading",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "GOLD_LOANS",
+    "content": {
+      "summary": "Government of India gold bonds paying 2.50% annual interest with sovereign safety guarantee.",
+      "full_text": "NexBank distributes Sovereign Gold Bonds issued by RBI on behalf of the Government of India. Denominated in multiples of 1 gram of gold (999 purity). Earns a fixed interest rate of 2.50% per annum payable semi-annually directly into the customer's savings account. Tenure is 8 years with premature exit option after the 5th year. Capital gains tax on redemption at maturity is 100% exempt for individuals.",
+      "structured_attributes": {
+        "annual_interest_rate_pct": 2.50,
+        "tenure_years": 8,
+        "premature_exit_year": 5,
+        "capital_gains_tax_at_maturity": "EXEMPT"
+      },
+      "disclaimer_text": "SGB value fluctuates with market gold prices. Issued during notified RBI subscription tranches."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/SGB/GOI-TR-02",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory GOI SGB regulations"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "wealth.gold@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-26T16:00:00Z",
+      "content_hash": "5678d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000039",
+    "title": "NexProtect Comprehensive Health Insurance Bancassurance Policy",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "INSURANCE_BANCASSURANCE",
+    "content": {
+      "summary": "Cashless hospitalization across 10,000+ network hospitals with zero room rent sub-limits.",
+      "full_text": "Distributed via partner insurer Star Health / Care Health Insurance. NexProtect Health Shield offers individual and family floater coverage from ₹5 Lakhs to ₹1 Crore. Key features include zero room rent capping, coverage for 540+ day care procedures, 60 days pre-hospitalization and 90 days post-hospitalization medical expenses, and annual complimentary health check-up. Tax deduction under Section 80D up to ₹25,000 (₹50,000 for senior citizens).",
+      "structured_attributes": {
+        "min_sum_insured_inr": 500000,
+        "max_sum_insured_inr": 10000000,
+        "room_rent_capping": "NONE",
+        "pre_hospitalization_days": 60,
+        "post_hospitalization_days": 90
+      },
+      "disclaimer_text": "Pre-existing diseases covered after 36 months waiting period as per policy wording."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "IRDAI",
+      "circular_reference": "IRDAI/HLT/REG/2024",
+      "statutory_mandate": true,
+      "compliance_notes": "Health insurance product disclosure"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "insurance.health@nexbank.com",
+      "compliance_approver_id": "compliance.insurance@nexbank.com",
+      "approval_timestamp": "2025-12-27T11:00:00Z",
+      "content_hash": "6789d4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000040",
+    "title": "NexProtect Motor Insurance Zero Depreciation Add-On Cover",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "INSURANCE_BANCASSURANCE",
+    "content": {
+      "summary": "100% claim settlement without depreciation deduction on fiber, glass, rubber, and metal parts.",
+      "full_text": "Distributed via partner general insurance company. NexProtect Drive Shield comprehensive motor policy includes bumper-to-bumper Zero Depreciation cover for private vehicles up to 5 years of age. Includes 24x7 roadside assistance, engine protection rider against water-logging hydrostatic lock, consumable cover (oil, nuts, bolts), and return-to-invoice protection in the event of total loss.",
+      "structured_attributes": {
+        "max_vehicle_age_years": 5,
+        "zero_depreciation_included": true,
+        "roadside_assistance_24x7": true
+      },
+      "disclaimer_text": "Mandatory compulsory deductible applies per IRDAI motor tariff regulations."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "IRDAI",
+      "circular_reference": "IRDAI/MTR/2024",
+      "statutory_mandate": true,
+      "compliance_notes": "Motor insurance standard disclosures"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "insurance.general@nexbank.com",
+      "compliance_approver_id": "compliance.insurance@nexbank.com",
+      "approval_timestamp": "2025-12-28T15:00:00Z",
+      "content_hash": "789ad4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+
+  {
+    "item_id": "00000001-0000-0000-0000-000000000041",
+    "title": "NexBank Digital Passbook (mPassbook) Offline Viewing Guide",
+    "category": "TROUBLESHOOTING_GUIDE",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Access and download past transaction histories offline through the NexBank Mobile App.",
+      "full_text": "To access your digital passbook: 1. Open the NexBank Mobile App and select 'mPassbook' from the dashboard. 2. Transactions sync automatically upon login. 3. To view offline, ensure 'Offline Access' is toggled ON under Passbook Settings; the last 90 days of transactions are cached locally with AES-256 encryption. 4. You can search transactions by date, amount, or merchant name and export e-statements directly in PDF or Excel formats.",
+      "structured_attributes": {
+        "offline_cache_days": 90,
+        "export_formats": ["PDF", "EXCEL", "CSV"]
+      },
+      "disclaimer_text": "Cached passbook records require device lock (PIN/Biometric) authentication."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "INTERNAL_POLICY",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Digital banking user guide"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "digital.banking@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-29T10:00:00Z",
+      "content_hash": "89abd4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000042",
+    "title": "NexBank Fraud Reporting & 24x7 Cyber Cell Helpline Matrix",
+    "category": "STANDARD_FAQ",
+    "sub_category": "FRAUD_CYBER_DEFENSE",
+    "content": {
+      "summary": "Emergency response directory for reporting cyber crime, stolen phones, and unauthorized transactions.",
+      "full_text": "If you detect suspicious account debits or compromised cards: 1. Call NexBank 24x7 Toll-Free Fraud Helpline: 1800-425-9999 (Press 1 for Instant Card & Netbanking Freeze). 2. National Cyber Crime Helpline: Dial 1930 or file complaint at https://cybercrime.gov.in within 24 hours. 3. Email cyber fraud alerts with transaction screenshots to frauddesk@nexbank.com. Instant blocking executes within 5 seconds across all channels.",
+      "structured_attributes": {
+        "bank_fraud_toll_free": "1800-425-9999",
+        "national_cyber_helpline": "1930",
+        "portal_url": "https://cybercrime.gov.in"
+      },
+      "disclaimer_text": "Act immediately within 3 days to preserve statutory Zero Liability customer protection."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "MHA/CyberCrime/1930",
+      "statutory_mandate": true,
+      "compliance_notes": "Cyber crime directory compliance"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "fraud.losscontrol@nexbank.com",
+      "compliance_approver_id": "ciso.office@nexbank.com",
+      "approval_timestamp": "2025-12-30T10:00:00Z",
+      "content_hash": "9abcd4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000043",
+    "title": "Foreign Outward Remittance Under RBI Liberalised Remittance Scheme (LRS)",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "NEFT_RTGS_SETTLEMENTS",
+    "content": {
+      "summary": "Annual LRS limit of USD 2,50,000 per financial year, purpose codes, and TCS tax structure.",
+      "full_text": "Under RBI Liberalised Remittance Scheme (LRS): Resident individuals can remit up to USD 250,000 (or equivalent) per financial year (April-March) for permitted current and capital account transactions (education abroad, medical treatment, family maintenance, travel, gift). Tax Collected at Source (TCS) rules: Education remittance funded by loan: 0.5% above ₹7 Lakhs; Medical/Education without loan: 5% above ₹7 Lakhs; General overseas remittance / foreign tour packages: 20% above ₹7 Lakhs.",
+      "structured_attributes": {
+        "annual_lrs_ceiling_usd": 250000,
+        "tcs_threshold_inr": 700000,
+        "tcs_edu_loan_pct": 0.5,
+        "tcs_general_pct": 20.0
+      },
+      "disclaimer_text": "Remittances for margins in lottery, gambling, or banned crypto platforms are strictly prohibited."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "A.P. (DIR Series) Circular No. 10/2023-24",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory Foreign Exchange Management Act (FEMA) LRS"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "forex.operations@nexbank.com",
+      "compliance_approver_id": "compliance.forex@nexbank.com",
+      "approval_timestamp": "2025-12-31T11:00:00Z",
+      "content_hash": "abcde4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000044",
+    "title": "NexBank Digital Account Statement Password Format & Decryption",
+    "category": "STANDARD_FAQ",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Password convention for opening password-protected PDF e-statements delivered via email.",
+      "full_text": "All monthly and periodic e-statements sent to your registered email are secured with a standard 8-character password format: The first 4 letters of your First Name in UPPERCASE followed by your Date of Birth in DDMM format. For example, if your name is Rohit Verma and your DOB is 15th August 1992, your PDF password is 'ROHI1508'. If your first name has fewer than 4 letters, use your entire first name followed by DOB.",
+      "structured_attributes": {
+        "password_format": "FIRST4_UPPERCASE_PLUS_DDMM",
+        "example_input": "Rohit Verma, 15-Aug-1992",
+        "example_output": "ROHI1508"
+      },
+      "disclaimer_text": "Do not share your statement password or unmask statements on public terminals."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "INTERNAL_POLICY",
+      "circular_reference": null,
+      "statutory_mandate": false,
+      "compliance_notes": "Standard customer security FAQ"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "operations.customer@nexbank.com",
+      "compliance_approver_id": "compliance.retail@nexbank.com",
+      "approval_timestamp": "2025-12-31T14:00:00Z",
+      "content_hash": "bcdef4e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000045",
+    "title": "Cheque Truncation System (CTS-2010) Clearing Schedule & Dishonour Rules",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "CTS grid clearing settlement batches and statutory charges for cheque return due to insufficient funds.",
+      "full_text": "Cheques deposited in NexBank branch drop-boxes before 2:00 PM on business days are processed in CTS evening batch for T+1 credit realization. Dishonour of outward/inward cheques due to insufficient funds attracts a penal charge of ₹500 + GST per return. Under Section 138 of the Negotiable Instruments Act, dishonour of a cheque for insufficiency of funds is a cognizable legal offense punishable with imprisonment up to 2 years.",
+      "structured_attributes": {
+        "cts_cutoff_time": "14:00 IST",
+        "clearing_cycle": "T+1",
+        "bounce_fee_inr": 500,
+        "ni_act_section": "Section 138"
+      },
+      "disclaimer_text": "Maintain sufficient clear balance 1 business day prior to cheque presentation."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2010-11/CTS-2010",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory CTS standards"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "clearing.operations@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-28T12:00:00Z",
+      "content_hash": "cdef04e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000046",
+    "title": "NexCredit Card Lost / Stolen Liability & Emergency Card Delivery",
+    "category": "TROUBLESHOOTING_GUIDE",
+    "sub_category": "CREDIT_CARDS",
+    "content": {
+      "summary": "Emergency response protocol for lost cards: zero liability post-reporting and worldwide card replacement.",
+      "full_text": "If your NexCredit card is lost or stolen: 1. Instantly permanent-block your card via the NexBank App or IVR. 2. Once blocked, the customer carries zero liability for any subsequent transactions. 3. Emergency card delivery: In Metro cities, replacement cards are dispatched within 24 hours via express courier. For international travelers holding Signature cards, emergency cash advance or replacement card can be arranged abroad through Visa Global Customer Assistance.",
+      "structured_attributes": {
+        "post_reporting_liability": 0,
+        "metro_delivery_hours": 24,
+        "emergency_assist_network": "Visa GCAS"
+      },
+      "disclaimer_text": "Transactions authenticated via PIN or OTP prior to formal reporting are not covered under lost card protection."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2022-23/92",
+      "statutory_mandate": true,
+      "compliance_notes": "Card liability guidelines"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "TELEPHONY_IVR", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "cards.risk@nexbank.com",
+      "compliance_approver_id": "compliance.cards@nexbank.com",
+      "approval_timestamp": "2025-12-29T14:00:00Z",
+      "content_hash": "def014e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000047",
+    "title": "NexBank Safe Deposit Locker Allotment, Rental Tariffs and Stamping",
+    "category": "PRODUCT_SPECIFICATION",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Annual locker rentals across Small, Medium, Large sizes and bank liability limits under revised RBI circular.",
+      "full_text": "NexBank provides safe deposit locker facilities across select branch vaults. Annual rental: Small: ₹2,000 + GST; Medium: ₹4,500 + GST; Large: ₹8,000 + GST; Extra Large: ₹15,000 + GST. Premier Wealth customers receive 50% rental discount. In accordance with RBI revised locker directions: In the event of theft, burglary, robbery, or building collapse attributable to the bank, the bank's liability is capped at 100 times the annual locker rent.",
+      "structured_attributes": {
+        "rental_small_inr": 2000,
+        "rental_medium_inr": 4500,
+        "rental_large_inr": 8000,
+        "bank_liability_multiplier": 100
+      },
+      "disclaimer_text": "Bank does not insure locker contents. Customers are advised to insure valuables independently."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/2021-2022/86/DOR.LEG.REC/40/09.07.005/2021-22",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory revised locker directions"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "operations.lockers@nexbank.com",
+      "compliance_approver_id": "compliance.regulatory@nexbank.com",
+      "approval_timestamp": "2025-12-30T16:00:00Z",
+      "content_hash": "ef0124e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000048",
+    "title": "NexBank Net Banking Beneficiary Addition Cooling Period & Limit Rules",
+    "category": "OPERATIONAL_POLICY",
+    "sub_category": "NEFT_RTGS_SETTLEMENTS",
+    "content": {
+      "summary": "30-minute activation window and ₹50,000 cumulative transfer limit during initial 24 hours.",
+      "full_text": "To prevent cyber fraud and social engineering takeovers: When a customer adds a new interbank transfer beneficiary via Internet Banking or Mobile App, a mandatory cooling period of 30 minutes applies before any transfer can be initiated. During the first 24 hours post-activation, total cumulative transfers to the new beneficiary are capped at ₹50,000. Full account transaction limits apply automatically after 24 hours.",
+      "structured_attributes": {
+        "activation_cooling_mins": 30,
+        "first_24h_transfer_limit_inr": 50000
+      },
+      "disclaimer_text": "Instant beneficiary confirmation SMS is dispatched to registered mobile number."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "RBI",
+      "circular_reference": "RBI/CyberSecurity/Beneficiary-2023",
+      "statutory_mandate": true,
+      "compliance_notes": "Cyber security framework for banks"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "digital.security@nexbank.com",
+      "compliance_approver_id": "ciso.office@nexbank.com",
+      "approval_timestamp": "2025-12-31T09:00:00Z",
+      "content_hash": "f01234e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000049",
+    "title": "RBI Framework for Revocation of Consent for Digital Data & Cookies",
+    "category": "REGULATORY_CIRCULAR",
+    "sub_category": "FRAUD_CYBER_DEFENSE",
+    "content": {
+      "summary": "Customer rights under Digital Personal Data Protection (DPDP) Act to withdraw digital consent.",
+      "full_text": "In accordance with the Digital Personal Data Protection (DPDP) Act and RBI privacy directions: NexBank customers maintain full autonomy over their financial data. Customers can inspect, modify, or revoke consent previously granted for promotional communications, third-party analytics, cross-sell marketing, and device permissions at any time via App Settings -> 'Privacy & Consent Center'. Account operational data required by statutory tax/AML laws is retained per legal mandates.",
+      "structured_attributes": {
+        "consent_revocation_channel": "App Privacy Center",
+        "act_reference": "DPDP Act 2023"
+      },
+      "disclaimer_text": "Revocation of consent for marketing does not affect normal banking transaction processing."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "GOI_FINANCE",
+      "circular_reference": "DPDP-Act-2023/Rules",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory DPDP Act compliance"
+    },
+    "required_auth_level": "ANONYMOUS",
+    "ttl_seconds": 604800,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "dpo.privacy@nexbank.com",
+      "compliance_approver_id": "legal.general@nexbank.com",
+      "approval_timestamp": "2025-12-31T15:00:00Z",
+      "content_hash": "012345e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  },
+  {
+    "item_id": "00000001-0000-0000-0000-000000000050",
+    "title": "NexBank Interest Certificate & Form 16A TDS Certificate Download Procedure",
+    "category": "TROUBLESHOOTING_GUIDE",
+    "sub_category": "SAVINGS_ACCOUNTS",
+    "content": {
+      "summary": "Procedure to download annual interest certificates and quarterly TDS Form 16A for income tax filing.",
+      "full_text": "To download Interest Certificate or Form 16A: 1. Login to Net Banking or Mobile App. 2. Navigate to 'Services' -> 'Tax Center' -> 'Interest & TDS Certificates'. 3. Select Financial Year (e.g. FY 2025-26) and download signed PDF. Form 16A is generated quarterly after TDS returns are filed with the Income Tax Department (TRACES). Senior citizens can submit Form 15H online in April to avoid TDS deduction if estimated total taxable income is nil.",
+      "structured_attributes": {
+        "forms_available": ["FORM_16A", "FORM_15G", "FORM_15H", "INTEREST_CERTIFICATE"],
+        "tax_center_access": "DIGITAL_SELF_SERVICE"
+      },
+      "disclaimer_text": "Form 15G/15H must be submitted annually at the beginning of each financial year."
+    },
+    "version": "1.0.0",
+    "effective_date": "2026-01-01T00:00:00Z",
+    "expiry_date": null,
+    "regulatory_tag": {
+      "primary_regulator": "GOI_FINANCE",
+      "circular_reference": "CBDT/IncomeTax/TDS-Cert",
+      "statutory_mandate": true,
+      "compliance_notes": "Statutory Income Tax reporting"
+    },
+    "required_auth_level": "OTP_VERIFIED",
+    "ttl_seconds": 86400,
+    "access_control_flags": {
+      "allowed_channels": ["MOBILE_APP", "WEB_PORTAL", "AGENT_DESKTOP"],
+      "customer_segments": ["ALL"],
+      "is_confidential": false
+    },
+    "verification_metadata": {
+      "content_owner_id": "taxation.operations@nexbank.com",
+      "compliance_approver_id": "compliance.tax@nexbank.com",
+      "approval_timestamp": "2025-12-31T16:00:00Z",
+      "content_hash": "123456e5f60718293a4b5c6d7e8f91a2b3c4d5e6f708192a3b4c5d6e7f8091a2"
+    }
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "conversation_id": "SIM-CONV-02",
+  "title": "Dispute Escalating to Emergency Fraud Handoff",
+  "intent_domain": "Security & Fraud / Transaction Dispute",
+  "primary_intent": "TXN-002",
+  "escalation_trigger": "ESC-001",
+  "customer_profile": {
+    "customer_id": "CUST-99214",
+    "tier": "PREMIER",
+    "initial_auth_state": "BIOMETRIC_VERIFIED",
+    "card_masked": "XXXX-XXXX-XXXX-4819"
+  },
+  "design_patterns_demonstrated": [
+    "Empathy-First Pattern",
+    "Confirmation-Before-Action Pattern",
+    "Graceful Degradation Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Empathy Bypass",
+    "Premature Escalation",
+    "Robotic Loop"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "Someone just charged INR 42,000 on my debit card at an electronics store in London! I am in Mumbai right now, this is fraudulent!",
+      "metadata": {
+        "intent": "SEC-001",
+        "confidence": 0.99,
+        "sentiment_score": -0.85,
+        "urgency": "CRITICAL"
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I understand how alarming this unauthorized international charge is, and I am acting right now to protect your funds. I have INSTANTLY FROZEN your debit card ending in 4819 so no further debits can occur. Reference ID #FRD-8821.",
+      "metadata": {
+        "action": "EMERGENCY_CARD_FREEZE",
+        "template_id": "TPL-008",
+        "guardrails_checked": [
+          "ESC-001 Fraud Trigger",
+          "Rule 1 PII masking"
+        ],
+        "design_pattern": "Empathy-First (Acknowledge -> Assure -> Act)"
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "Thank god you locked it. Will I get my 42,000 back? That was my rent money!",
+      "metadata": {
+        "intent": "TXN-002",
+        "sentiment_score": -0.4,
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "Under RBI customer protection directives, you have zero liability for reported unauthorized electronic transactions. I am transferring you directly to our 24x7 Fraud Investigation Desk right now. All details and your card freeze are pre-briefed so you will not need to repeat anything. Specialist connecting in 30 seconds.",
+      "metadata": {
+        "action": "ESCALATE_P0",
+        "target_queue": "FRAUD_INVESTIGATION_DESK",
+        "context_package_generated": true,
+        "sla_seconds": 120
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_WITH_ESCALATION",
+  "csat_score": 5,
+  "audit_compliance": {
+    "pii_masked": true,
+    "zero_harm_enforced": true,
+    "statutory_retention_years": 7
+  }
+}

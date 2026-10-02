@@ -1,0 +1,68 @@
+{
+  "conversation_id": "SIM-CONV-14",
+  "title": "High-Value Account Closure Escaping to Relationship Manager",
+  "intent_domain": "Account Management / Customer Retention",
+  "primary_intent": "ACC-005",
+  "escalation_trigger": "ESC-007",
+  "customer_profile": {
+    "customer_id": "CUST-88192",
+    "tier": "IMPERIA",
+    "balance_inr": 1850000.0,
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Empathy-First Pattern",
+    "Graceful Degradation Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Robotic Loop",
+    "Premature Escalation"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I want to close my Imperia account ending in 0092 and transfer my 18.5 lakh balance to another bank.",
+      "metadata": {
+        "intent": "ACC-005",
+        "confidence": 0.98,
+        "sentiment_score": -0.3
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "We truly value your Imperia relationship with NexBank, and I am very sorry to hear you are considering closing your account. May I ask what prompted this decision, such as pricing, service experience, or relocation?",
+      "metadata": {
+        "action": "EMPATHY_DISCOVERY",
+        "template_id": "TPL-001"
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "Another bank is offering me a dedicated wealth desk and higher interest on my sweep balance.",
+      "metadata": {
+        "intent": "RETENTION_FEEDBACK",
+        "sentiment_score": -0.1
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "I completely understand. Because of your valued relationship, I am connecting you directly with your dedicated Senior Relationship Manager, Mr. Vikram Seth, who can review customized interest yield enhancements and concierge options for your 18.5L portfolio. Transferring you now with zero wait time.",
+      "metadata": {
+        "action": "ESCALATE_P1_ESC_007",
+        "target_queue": "RELATIONSHIP_MANAGER_CONCIERGE",
+        "sla_seconds": 300,
+        "resolution_status": "ESCALATED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_WITH_ESCALATION",
+  "csat_score": 5,
+  "audit_compliance": {
+    "rm_assigned": "EMP_VIKRAM_SETH_881",
+    "statutory_retention_years": 7
+  }
+}

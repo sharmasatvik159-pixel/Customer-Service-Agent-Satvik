@@ -1,0 +1,46 @@
+{
+  "conversation_id": "SIM-CONV-12",
+  "title": "NEFT/RTGS Transfer Tracking with UTR Validation",
+  "intent_domain": "Transaction & Payment",
+  "primary_intent": "TXN-004",
+  "customer_profile": {
+    "customer_id": "CUST-91823",
+    "tier": "COMMERCIAL_SME",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Info Dump",
+    "False Confidence"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "Can you track RTGS transfer UTR NEXB2026100298124819? Vendor is claiming they haven't received the 3.5 lakhs.",
+      "metadata": {
+        "intent": "TXN-004",
+        "confidence": 0.97,
+        "sentiment_score": -0.2
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I have verified UTR NEXB2026100298124819 for INR 3,50,000 sent to State Bank of India. The RBI RTGS clearing gateway reports status: SETTLED_SUCCESSFULLY at 11:24:18 IST today. Beneficiary reference code #SBI-RTGS-9912. The vendor's bank has received the funds. Would you like me to email the official payment acknowledgment slip to your registered email?",
+      "metadata": {
+        "action": "QUERY_RTGS_SETTLEMENT",
+        "retrieved_kb": "KB-TXN-004",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "utr_verified": true,
+    "statutory_retention_years": 7
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "conversation_id": "SIM-CONV-18",
+  "title": "3-in-1 Demat Linkage vs Stock Recommendation Request",
+  "intent_domain": "Investment & Wealth Management",
+  "primary_intent": "INV-002",
+  "customer_profile": {
+    "customer_id": "CUST-90182",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "OTP_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Graceful Degradation Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "False Confidence",
+    "Knowledge Hallucination"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I want to link my NexBank account to a Demat account to buy Reliance shares. Will Reliance stock go up next month?",
+      "metadata": {
+        "intent": "INV-002",
+        "confidence": 0.96,
+        "sentiment_score": 0.1
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I can certainly assist you in opening and linking a NexBank 3-in-1 Demat & Trading account. However, under SEBI regulations, I cannot provide opinions, predictions, or recommendations on individual stocks such as Reliance Industries. Linking your Demat account takes under 5 minutes with zero account opening fees. Would you like to proceed with the technical linkage?",
+      "metadata": {
+        "action": "SEBI_REFUSAL_AND_TECHNICAL_ASSIST",
+        "template_id": "TPL-004",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "sebi_compliance_enforced": true,
+    "statutory_retention_years": 7
+  }
+}

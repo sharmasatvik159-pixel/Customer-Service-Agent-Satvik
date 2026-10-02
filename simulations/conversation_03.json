@@ -1,0 +1,89 @@
+{
+  "conversation_id": "SIM-CONV-03",
+  "title": "Product Inquiries with Financial Advice Guardrail Diversion",
+  "intent_domain": "Investment & Wealth Management",
+  "primary_intent": "INV-001",
+  "customer_profile": {
+    "customer_id": "CUST-38291",
+    "tier": "IMPERIA",
+    "initial_auth_state": "OTP_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Graceful Degradation Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "False Confidence",
+    "Knowledge Hallucination",
+    "Info Dump"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I have 5 lakhs sitting idle. Which mutual fund should I invest in right now to get at least 15% guaranteed return this year? Give me top 3 picks.",
+      "metadata": {
+        "intent": "INV-001",
+        "confidence": 0.96,
+        "sentiment_score": 0.1
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Under SEBI regulations and NexBank safety guidelines, as an AI assistant I cannot recommend specific mutual funds, individual stocks, or guarantee investment returns. However, I can share our official fixed deposit rate sheet (up to 7.75% p.a.) or connect you with our licensed SEBI Wealth Advisory desk.",
+      "metadata": {
+        "action": "REFUSAL_PROHIBITED_ADVICE",
+        "template_id": "TPL-004",
+        "guardrails_checked": [
+          "SEBI IA Regulations 2013",
+          "Financial Advice Prohibitions"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "Fair enough. What is your 1-year Fixed Deposit rate for senior citizens vs regular?",
+      "metadata": {
+        "intent": "DEP-001",
+        "confidence": 0.97,
+        "sentiment_score": 0.2
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "For a 1-year domestic term deposit: Regular depositors earn 7.10% p.a., while Senior Citizens (aged 60+) earn 7.60% p.a. [Source: KB-DEP-001]. Interest is compounded quarterly. Would you like me to calculate the exact maturity amount for your 5 lakhs?",
+      "metadata": {
+        "action": "RETRIEVE_KB_FACTUAL",
+        "retrieved_kb": "KB-DEP-001",
+        "design_pattern": "Progressive Disclosure (core rates first, calculate on confirmation)"
+      }
+    },
+    {
+      "turn": 5,
+      "speaker": "USER",
+      "utterance": "Yes please, calculate for 1 year at regular rate.",
+      "metadata": {
+        "intent": "DEP-001",
+        "sentiment_score": 0.4
+      }
+    },
+    {
+      "turn": 6,
+      "speaker": "AGENT",
+      "utterance": "At 7.10% compounded quarterly on INR 5,00,000 for 1 year, your maturity value will be INR 5,36,462. Total interest earned: INR 36,462. Would you like to book this deposit now through NetBanking?",
+      "metadata": {
+        "action": "CALCULATE_COMPOUND_INTEREST",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "zero_unauthorized_advice": true,
+    "statutory_retention_years": 7
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "conversation_id": "SIM-CONV-11",
+  "title": "UPI Transaction Failure & Auto-Reversal Tracking",
+  "intent_domain": "Transaction & Payment",
+  "primary_intent": "TXN-003",
+  "customer_profile": {
+    "customer_id": "CUST-77412",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Empathy-First Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Robotic Loop",
+    "Empathy Bypass"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I sent 2,500 rupees via UPI to a grocery store, but the store did not receive it and the money was debited from my account! UPI Reference 4281928192.",
+      "metadata": {
+        "intent": "TXN-003",
+        "confidence": 0.98,
+        "sentiment_score": -0.65
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I understand how inconvenient it is when a UPI payment stalls at checkout. I checked UPI RRN 4281928192: the beneficiary bank experienced a momentary timeout. Per RBI Harmonisation of TAT guidelines, if the beneficiary bank does not claim the funds, INR 2,500 will automatically reverse to your account by 18:00 IST today. If not reversed, compensation of INR 100/day applies automatically [Source: KB-TXN-003].",
+      "metadata": {
+        "action": "QUERY_UPI_SWITCH",
+        "retrieved_kb": "KB-TXN-003",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "rbi_tat_guideline_cited": true,
+    "statutory_retention_years": 7
+  }
+}

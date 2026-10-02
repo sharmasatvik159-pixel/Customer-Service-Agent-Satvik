@@ -1,0 +1,45 @@
+app:
+  name: "NexBank Agentic Customer Service"
+  version: "0.1.0"
+  environment: "development"
+  debug: true
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  timeout_keep_alive: 65
+
+session:
+  ttl_seconds: 1800
+  max_turns_retained_in_context: 4
+  max_tokens_budget: 4000
+
+nlu:
+  confidence_threshold_high: 0.88
+  confidence_threshold_disambiguation: 0.65
+  zero_shot_model: "cross-encoder/nli-deberta-v3-small"
+  rasa_endpoint: "http://localhost:5005"
+
+rag:
+  top_k_candidates: 20
+  final_top_k: 3
+  rerank_threshold: 0.72
+  similarity_metric: "cosine"
+  embedding_model: "text-embedding-3-small"
+  reranker_model: "BAAI/bge-reranker-large"
+
+latency_limits_ms:
+  ingress_pii_budget: 50
+  nlu_budget: 150
+  state_budget: 30
+  rag_budget: 200
+  llm_generation_budget: 2000
+  guardrails_budget: 100
+  hard_turn_cap: 3000
+
+escalation:
+  sentiment_trigger_threshold: -0.60
+  max_consecutive_fallbacks: 2
+  max_auth_attempts: 3
+  high_value_wire_threshold_usd: 25000.00

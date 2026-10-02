@@ -1,0 +1,46 @@
+{
+  "conversation_id": "SIM-CONV-09",
+  "title": "Pre-Approved Home Loan Eligibility Assessment",
+  "intent_domain": "Loans & Mortgages",
+  "primary_intent": "LOA-002",
+  "customer_profile": {
+    "customer_id": "CUST-22910",
+    "tier": "PREMIER",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Knowledge Hallucination",
+    "Info Dump"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I am looking to buy a flat in Bengaluru. Do I have any pre-approved home loan offers with NexBank?",
+      "metadata": {
+        "intent": "LOA-002",
+        "confidence": 0.97,
+        "sentiment_score": 0.3
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Congratulations on your home purchase plans! Yes, based on your Premier relationship and salary credits, you are pre-approved for a NexBank Home Loan of up to INR 85 Lakhs at our special festive floating rate of 8.40% p.a. Zero processing fees apply until 31-Oct-2026. Would you like me to issue a digital provisional sanction letter?",
+      "metadata": {
+        "action": "RETRIEVE_PREAPPROVED_OFFER",
+        "retrieved_kb": "KB-LOA-002",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "preapproval_verified": true,
+    "statutory_retention_years": 7
+  }
+}

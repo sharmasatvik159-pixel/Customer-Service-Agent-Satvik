@@ -1,0 +1,47 @@
+{
+  "conversation_id": "SIM-CONV-19",
+  "title": "Senior Citizen Super Saver Deposit Compounding Schedule",
+  "intent_domain": "Deposits & Savings",
+  "primary_intent": "DEP-001",
+  "customer_profile": {
+    "customer_id": "CUST-10928",
+    "tier": "SENIOR_CITIZEN",
+    "initial_auth_state": "BIOMETRIC_VERIFIED",
+    "age": 68
+  },
+  "design_patterns_demonstrated": [
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Info Dump",
+    "Robotic Loop"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I am 68 years old and retired. What interest rate will I get on a 3-year fixed deposit of 10 lakhs?",
+      "metadata": {
+        "intent": "DEP-001",
+        "confidence": 0.99,
+        "sentiment_score": 0.3
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Under our Senior Citizen Privilege scheme, you receive an additional 0.50% p.a. over regular rates. For a 3-year term, your effective rate is 7.75% p.a. compounded quarterly [Source: KB-DEP-001]. On INR 10,00,000, your total maturity payout will be INR 12,58,958. Would you like monthly interest payout to your pension account or cumulative payout at maturity?",
+      "metadata": {
+        "action": "CALCULATE_SENIOR_RATES",
+        "retrieved_kb": "KB-DEP-001",
+        "design_pattern": "Progressive Disclosure (core benefit first, payment cadence options)"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "senior_citizen_rate_verified": true,
+    "statutory_retention_years": 7
+  }
+}

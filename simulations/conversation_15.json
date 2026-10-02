@@ -1,0 +1,52 @@
+{
+  "conversation_id": "SIM-CONV-15",
+  "title": "Politically Exposed Person (PEP) Silent Due Diligence",
+  "intent_domain": "Compliance & Regulatory",
+  "primary_intent": "ACC-004",
+  "escalation_trigger": "ESC-015",
+  "customer_profile": {
+    "customer_id": "CUST-33108",
+    "tier": "PREMIER",
+    "initial_auth_state": "BIOMETRIC_VERIFIED",
+    "pep_status": "PEP_CLOSE_ASSOCIATE"
+  },
+  "design_patterns_demonstrated": [
+    "Graceful Degradation Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "False Confidence",
+    "Knowledge Hallucination"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I want to increase my daily outward RTGS limit to 50 lakhs for property purchases. My father is the Cabinet Minister for Infrastructure.",
+      "metadata": {
+        "intent": "ACC-004",
+        "confidence": 0.94,
+        "sentiment_score": 0.2
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I can initiate your request to elevate your daily RTGS limit. To ensure compliance with regulatory standards for high-value limits, this request requires secondary review by our Enhanced Due Diligence team. Your application #EDD-88219 has been routed to our compliance desk, and a specialist will contact you within 5 minutes.",
+      "metadata": {
+        "action": "COVERT_PEP_ROUTING",
+        "target_queue": "ENHANCED_DUE_DILIGENCE_DESK",
+        "guardrails_checked": [
+          "ESC-015 PEP Mandate",
+          "PMLA Non-Tipping-Off"
+        ],
+        "resolution_status": "ESCALATED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_WITH_ESCALATION",
+  "csat_score": 5,
+  "audit_compliance": {
+    "pep_alert_emitted": true,
+    "statutory_retention_years": 7
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "$schema": "https://json-schema.nexbank.internal/v1/prompt-templates.json",
+  "version": "1.0.0",
+  "description": "Production Prompt Template Library for NexBank Agentic AI Customer Service Agent",
+  "templates": [
+    {
+      "template_id": "TPL-001",
+      "template_name": "Empathy-First Distress Acknowledgment",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "Customer sentiment score S < -0.50 or keywords denoting financial distress / anxiety (unauthorized charge, penalty fee, failed emergency transfer)",
+      "dynamic_variables": [
+        "customer_name",
+        "issue_keyword",
+        "action_preview"
+      ],
+      "template_text": "I completely understand how stressful experiencing {issue_keyword} can be, {customer_name}. Please rest assured that you are in good hands. I am reviewing your account right now to {action_preview}.",
+      "safety_annotations": {
+        "forbid_liability_admission": true,
+        "empathy_depth": "HIGH",
+        "max_length_sentences": 3
+      }
+    },
+    {
+      "template_id": "TPL-002",
+      "template_name": "Disambiguation Probe",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "NLU confidence between 0.40 and 0.70 with 2+ competing intent candidates",
+      "dynamic_variables": [
+        "option_a_description",
+        "option_b_description"
+      ],
+      "template_text": "To ensure I get this right for you, could you please clarify: are you looking to {option_a_description}, or did you want to {option_b_description}?",
+      "safety_annotations": {
+        "max_options_presented": 3,
+        "prevent_deadlock": true
+      }
+    },
+    {
+      "template_id": "TPL-003",
+      "template_name": "Confirmation-Before-Action (High-Stakes Mutation)",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "Pre-execution of any state mutation (card blocking, address change, limit modification, transfer draft)",
+      "dynamic_variables": [
+        "action_description",
+        "target_entity_identifier",
+        "financial_implication"
+      ],
+      "template_text": "Before I proceed, please confirm: you would like me to {action_description} for {target_entity_identifier}. {financial_implication}. Please reply 'Confirm' or 'Cancel'.",
+      "safety_annotations": {
+        "requires_explicit_affirmation": true,
+        "rejection_keyword_handling": true
+      }
+    },
+    {
+      "template_id": "TPL-004",
+      "template_name": "Refusal & Prohibited Advice Diversion",
+      "layer_association": "Layer 1 (Safety Invariants)",
+      "trigger_condition": "User requests specific stock picks, mutual fund recommendations, market timing, or crypto investment advice",
+      "dynamic_variables": [
+        "prohibited_topic_name",
+        "wealth_desk_hours"
+      ],
+      "template_text": "Under SEBI regulations and NexBank safety guidelines, as an AI assistant I cannot provide personalized investment recommendations or advise on {prohibited_topic_name}. However, I would be delighted to connect you with our certified NexBank Wealth Advisory team, available {wealth_desk_hours}. Would you like me to schedule a consultation?",
+      "safety_annotations": {
+        "statutory_citation": "SEBI (Investment Advisers) Regulations, 2013",
+        "zero_tolerance_override": true
+      }
+    },
+    {
+      "template_id": "TPL-005",
+      "template_name": "Warm Escalation Handoff Briefing",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "Escalation trigger condition ESC-001..ESC-015 evaluated and approved for human transfer",
+      "dynamic_variables": [
+        "target_department_name",
+        "estimated_wait_seconds",
+        "summarized_need"
+      ],
+      "template_text": "To ensure your request is handled with specialized care, I am transferring you directly to our {target_department_name}. I have packaged your entire request regarding {summarized_need} and pre-verified your details so you will not need to repeat anything. A specialist will be with you in approximately {estimated_wait_seconds} seconds.",
+      "safety_annotations": {
+        "zero_repetition_commitment": true,
+        "prevent_customer_panic": true
+      }
+    },
+    {
+      "template_id": "TPL-006",
+      "template_name": "Bilingual Hinglish Code-Switching Greeting",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "User initiates conversation or switches language to conversational Hindi / Hinglish",
+      "dynamic_variables": [
+        "customer_name",
+        "time_greeting"
+      ],
+      "template_text": "Namaste {customer_name}! {time_greeting}. Main Nexie hoon, aapki NexBank digital assistant. Aaj main aapki account balance, card services ya transactions mein kya madad kar sakti hoon?",
+      "safety_annotations": {
+        "preserve_banking_terms_english": true,
+        "language_pair": "hi-en"
+      }
+    },
+    {
+      "template_id": "TPL-007",
+      "template_name": "Out-of-Band OTP Step-Up Challenge",
+      "layer_association": "Layer 1 (Safety Invariants)",
+      "trigger_condition": "Customer attempts sensitive profile change or limit elevation requiring OTP_VERIFIED authentication",
+      "dynamic_variables": [
+        "masked_mobile_number",
+        "target_action_label"
+      ],
+      "template_text": "For your account security, a 6-digit one-time verification passcode has been sent to your registered mobile ending in {masked_mobile_number} to authorize {target_action_label}. Please enter the 6-digit code below. NexBank staff will never ask you for this code.",
+      "safety_annotations": {
+        "anti_phishing_warning_included": true,
+        "pci_dss_compliance": true
+      }
+    },
+    {
+      "template_id": "TPL-008",
+      "template_name": "Emergency Card Freeze Instant Confirmation",
+      "layer_association": "Layer 1 (Safety Invariants)",
+      "trigger_condition": "Intent SEC-001 or CRD-001 fired with lost/stolen card indicator",
+      "dynamic_variables": [
+        "card_type",
+        "card_last_four",
+        "freeze_timestamp",
+        "incident_reference_id"
+      ],
+      "template_text": "EMERGENCY ACTION COMPLETE: Your {card_type} ending in {card_last_four} has been INSTANTLY FROZEN as of {freeze_timestamp} IST. No further transactions can occur. Your reference number is #{incident_reference_id}. Would you like me to order a replacement card or dispute a recent charge?",
+      "safety_annotations": {
+        "execute_before_chatting": true,
+        "rbi_unauthorized_liability_protection": true
+      }
+    },
+    {
+      "template_id": "TPL-009",
+      "template_name": "RBI Statutory Regulatory Disclosure",
+      "layer_association": "Layer 2 (Regulatory Mandates)",
+      "trigger_condition": "Customer queries dispute grievance escalation or loan interest rate APR terms",
+      "dynamic_variables": [
+        "statutory_disclosure_text",
+        "grievance_portal_link"
+      ],
+      "template_text": "Statutory Notice: {statutory_disclosure_text}. If your grievance remains unresolved after 30 days, you may approach the RBI Banking Ombudsman via {grievance_portal_link}.",
+      "safety_annotations": {
+        "statutory_mandate": "RBI Integrated Ombudsman Scheme, 2021",
+        "immutable_wording": true
+      }
+    },
+    {
+      "template_id": "TPL-010",
+      "template_name": "Sliding Inactivity Session Timeout Warning",
+      "layer_association": "Layer 1 (Safety Invariants)",
+      "trigger_condition": "User conversation idle for 240 seconds (4 minutes) in an active authenticated session",
+      "dynamic_variables": [
+        "seconds_remaining"
+      ],
+      "template_text": "Are you still there? For your security, this active banking session will automatically close and clear memory in {seconds_remaining} seconds due to inactivity. Please tap anywhere or send a message to keep this session open.",
+      "safety_annotations": {
+        "session_security_rule_7": true,
+        "max_idle_seconds": 300
+      }
+    },
+    {
+      "template_id": "TPL-011",
+      "template_name": "Post-Resolution CSAT Evaluation Prompt",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "Terminal intent state reached (RESOLVED) and user affirms no further assistance required",
+      "dynamic_variables": [
+        "resolved_intent_name"
+      ],
+      "template_text": "I'm glad we could resolve your inquiry regarding {resolved_intent_name}! On a scale of 1 to 5 (where 5 is Excellent), how would you rate your experience with me today?",
+      "safety_annotations": {
+        "suppress_if_escalated": true,
+        "single_prompt_limit": true
+      }
+    },
+    {
+      "template_id": "TPL-012",
+      "template_name": "Transaction Dispute Intake Intake Form",
+      "layer_association": "Layer 3 (Dialogue)",
+      "trigger_condition": "Intent TXN-002 (Dispute Transaction) recognized for transaction <= INR 50,000",
+      "dynamic_variables": [
+        "transaction_date",
+        "amount_inr",
+        "merchant_name",
+        "rrn_number"
+      ],
+      "template_text": "I have retrieved the disputed transaction: INR {amount_inr} at {merchant_name} on {transaction_date} (RRN: {rrn_number}). To submit this claim to the settlement network, please select the dispute reason: 1) Charged but cash not dispensed / merchant denied service, 2) Charged multiple times, 3) Incorrect amount deducted.",
+      "safety_annotations": {
+        "mask_account_numbers": true,
+        "dispute_cap_enforced": true
+      }
+    },
+    {
+      "template_id": "TPL-013",
+      "template_name": "High-Value Transaction Limit Step-Up Request",
+      "layer_association": "Layer 1 (Safety Invariants)",
+      "trigger_condition": "Customer requests daily payment / UPI limit elevation above standard baseline",
+      "dynamic_variables": [
+        "current_limit_inr",
+        "requested_limit_inr"
+      ],
+      "template_text": "Your current daily transfer limit is INR {current_limit_inr}. To elevate your limit to INR {requested_limit_inr}, biometric re-authentication is required. Please tap the Biometric Prompt on your screen.",
+      "safety_annotations": {
+        "rbi_digital_lending_guidelines": true,
+        "out_of_band_signature_mandate": true
+      }
+    },
+    {
+      "template_id": "TPL-014",
+      "template_name": "KYC Document Rejection Explanation",
+      "layer_association": "Layer 2 (Regulatory Mandates)",
+      "trigger_condition": "Customer inquires why their recent KYC proof of address / identity was rejected",
+      "dynamic_variables": [
+        "document_type",
+        "rejection_reason",
+        "remedy_instruction"
+      ],
+      "template_text": "Your submitted {document_type} could not be verified due to: {rejection_reason}. Under RBI KYC Master Directions, {remedy_instruction}. You can re-upload a clear copy directly in the app under Profile > KYC Documents.",
+      "safety_annotations": {
+        "cite_rbi_kyc_master_direction": true,
+        "actionable_next_step": true
+      }
+    },
+    {
+      "template_id": "TPL-015",
+      "template_name": "Beneficiary Addition Cooling-Off Period Notice",
+      "layer_association": "Layer 2 (Regulatory Mandates)",
+      "trigger_condition": "Customer adds a new NEFT/RTGS/IMPS beneficiary and attempts instant fund transfer",
+      "dynamic_variables": [
+        "beneficiary_name",
+        "cooldown_hours",
+        "capped_amount_inr",
+        "active_time"
+      ],
+      "template_text": "Beneficiary {beneficiary_name} has been registered successfully. In compliance with RBI fraud prevention controls, a mandatory {cooldown_hours}-hour cooling period applies. You can transfer up to INR {capped_amount_inr} during this period. Full transfer limits will activate at {active_time} IST.",
+      "safety_annotations": {
+        "cooling_off_regulatory_enforcement": true,
+        "prevent_bypass_override": true
+      }
+    },
+    {
+      "template_id": "TPL-016",
+      "template_name": "Crisis / Self-Harm De-escalation & Emergency Referral",
+      "layer_association": "Layer 1 (Safety Invariants)",
+      "trigger_condition": "Customer mentions self-harm, suicide, clinical distress, or severe domestic crisis (ESC-011)",
+      "dynamic_variables": [
+        "national_helpline_phone",
+        "specialized_crisis_service"
+      ],
+      "template_text": "If you are feeling overwhelmed or going through a difficult time, please know that you are not alone and there is support available right now. Please reach out to the National Mental Health Helpline (KIRAN) at {national_helpline_phone} or {specialized_crisis_service}. Both are free, confidential, and available 24/7. A senior NexBank support manager has also been notified to assist you with care.",
+      "safety_annotations": {
+        "emergency_priority": "P0",
+        "immediate_dispatch": true,
+        "prevent_debate": true
+      }
+    }
+  ]
+}

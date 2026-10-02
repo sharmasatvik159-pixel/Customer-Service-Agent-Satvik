@@ -1,0 +1,31 @@
+guardrails:
+  strict_mode: true
+  enable_pii_masking: true
+  enable_hallucination_check: true
+  enable_financial_advice_detection: true
+
+pii:
+  redaction_targets:
+    - CREDIT_CARD
+    - SSN
+    - BANK_ACCOUNT
+    - CVV
+    - PHONE_NUMBER
+    - EMAIL
+  mask_format: "SURROGATE_TOKEN"
+  vault_encryption: "AES-256-GCM"
+
+financial_advice:
+  prohibited_topics:
+    - stock_picks
+    - cryptocurrency_speculation
+    - forward_looking_rate_guarantees
+    - personalized_tax_filing_advice
+    - bankruptcy_counseling
+  fallback_action: "CANNED_NEUTRAL_DISCLAIMER"
+  canned_response: "I can provide factual information regarding NexBank account features, interest rates, and fee schedules, but I am not authorized to provide personalized financial, investment, or tax advice. For tailored portfolio guidance, I would be delighted to connect you with a certified NexBank Wealth Advisor."
+
+adversarial:
+  delimiter_enforcement: "XML"
+  canary_monitoring_enabled: true
+  max_prompt_length_chars: 1000

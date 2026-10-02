@@ -1,0 +1,94 @@
+{
+  "conversation_id": "SIM-CONV-01",
+  "title": "Balance Enquiry with Step-Up Authentication Flow",
+  "intent_domain": "Account Management",
+  "primary_intent": "ACC-001",
+  "customer_profile": {
+    "customer_id": "CUST-49102",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "ANONYMOUS",
+    "registered_mobile_masked": "XXXXXX9123"
+  },
+  "design_patterns_demonstrated": [
+    "Progressive Disclosure Pattern",
+    "Confirmation-Before-Action Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Authentication Theatre",
+    "Info Dump",
+    "Robotic Loop"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "Hi, can you tell me how much balance I have in my savings account?",
+      "metadata": {
+        "intent": "ACC-001",
+        "confidence": 0.98,
+        "auth_level": "ANONYMOUS",
+        "sentiment_score": 0.05
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Hello! I would be glad to check your savings account balance. For your security, please verify your identity using the 6-digit OTP sent to your registered mobile ending in 9123.",
+      "metadata": {
+        "action": "CHALLENGE_OTP",
+        "template_id": "TPL-007",
+        "guardrails_checked": [
+          "Rule 1 (Zero PII plaintext)",
+          "Rule 2 (Step-up auth)"
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "The code is 482910.",
+      "metadata": {
+        "intent": "AUTH_OTP_SUBMIT",
+        "confidence": 0.99,
+        "auth_level": "OTP_VERIFIED",
+        "sentiment_score": 0.1
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "Thank you, verification successful. Your NexBank Classic Savings Account (ending in 4812) has an available balance of INR 34,850.50 as of today, 02-Oct-2026. Would you like to view recent transactions or download a mini-statement?",
+      "metadata": {
+        "action": "RENDER_BALANCE",
+        "retrieved_kb": "KB-ACC-BAL-01",
+        "design_pattern": "Progressive Disclosure (essential balance first, offer follow-up)"
+      }
+    },
+    {
+      "turn": 5,
+      "speaker": "USER",
+      "utterance": "No, that's all I needed. Thank you!",
+      "metadata": {
+        "intent": "GEN-002",
+        "sentiment_score": 0.85
+      }
+    },
+    {
+      "turn": 6,
+      "speaker": "AGENT",
+      "utterance": "You are very welcome! On a scale of 1 to 5, how satisfied were you with this assistance today?",
+      "metadata": {
+        "action": "PROMPT_CSAT",
+        "template_id": "TPL-011",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "pii_masked": true,
+    "latency_p99_ms": 1150,
+    "statutory_retention_years": 7
+  }
+}

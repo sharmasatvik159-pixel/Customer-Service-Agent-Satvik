@@ -1,0 +1,83 @@
+{
+  "conversation_id": "SIM-CONV-13",
+  "title": "Nominee Addition & Updation on Savings Account",
+  "intent_domain": "Account Management",
+  "primary_intent": "ACC-006",
+  "customer_profile": {
+    "customer_id": "CUST-55192",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Confirmation-Before-Action Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Authentication Theatre",
+    "Info Dump"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I want to add my daughter Ananya Sharma as the 100% nominee on my savings account.",
+      "metadata": {
+        "intent": "ACC-006",
+        "confidence": 0.98,
+        "sentiment_score": 0.2
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I can help you register your nominee. Please provide Ananya's date of birth and whether her communication address matches your registered address.",
+      "metadata": {
+        "action": "SLOT_FILLING_NOMINEE",
+        "template_id": "TPL-002"
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "DOB is 14-Aug-2004 and she lives with me at the same address.",
+      "metadata": {
+        "intent": "PROVIDE_SLOT",
+        "sentiment_score": 0.2
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "Please confirm: You are registering Ananya Sharma (Daughter, DOB: 14-Aug-2004) as 100% nominee for Savings Account ending in 9102. Reply 'Confirm' to finalize.",
+      "metadata": {
+        "action": "CONFIRMATION_BEFORE_ACTION",
+        "template_id": "TPL-003",
+        "design_pattern": "Confirmation-Before-Action"
+      }
+    },
+    {
+      "turn": 5,
+      "speaker": "USER",
+      "utterance": "Confirm",
+      "metadata": {
+        "intent": "CONFIRM_ACTION",
+        "sentiment_score": 0.4
+      }
+    },
+    {
+      "turn": 6,
+      "speaker": "AGENT",
+      "utterance": "Nominee registration complete! Form DA-1 has been filed and registered under Acknowledgement #NOM-20261002-8819. You will receive an SMS confirmation shortly.",
+      "metadata": {
+        "action": "SUBMIT_NOMINEE_DA1",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "form_da1_filed": true,
+    "statutory_retention_years": 7
+  }
+}

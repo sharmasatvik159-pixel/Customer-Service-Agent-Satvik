@@ -1,0 +1,83 @@
+{
+  "conversation_id": "SIM-CONV-16",
+  "title": "Address Update via DigiLocker API Integration",
+  "intent_domain": "Account Management",
+  "primary_intent": "ACC-004",
+  "customer_profile": {
+    "customer_id": "CUST-77192",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Confirmation-Before-Action Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Authentication Theatre",
+    "Info Dump"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I recently shifted to Bengaluru. Can I update my mailing address online without visiting the branch?",
+      "metadata": {
+        "intent": "ACC-004",
+        "confidence": 0.97,
+        "sentiment_score": 0.1
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Yes, absolutely! Under RBI digital KYC guidelines, you can update your communication address instantly using DigiLocker Aadhaar verification. Would you like me to initiate the DigiLocker authorization window?",
+      "metadata": {
+        "action": "OFFER_DIGILOCKER_FLOW",
+        "retrieved_kb": "KB-ACC-004",
+        "template_id": "TPL-003"
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "Yes please.",
+      "metadata": {
+        "intent": "CONFIRM_ACTION",
+        "sentiment_score": 0.3
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "DigiLocker consent verified! New address retrieved: Flat 302, Palm Meadows, Whitefield, Bengaluru - 560066. Please reply 'Confirm' to finalize the address change across all your NexBank accounts.",
+      "metadata": {
+        "action": "PULL_DIGILOCKER_POA",
+        "design_pattern": "Confirmation-Before-Action"
+      }
+    },
+    {
+      "turn": 5,
+      "speaker": "USER",
+      "utterance": "Confirm",
+      "metadata": {
+        "intent": "CONFIRM_ACTION",
+        "sentiment_score": 0.5
+      }
+    },
+    {
+      "turn": 6,
+      "speaker": "AGENT",
+      "utterance": "Your communication address has been successfully updated! Reference #ADR-20261002-4412. In accordance with security controls, sensitive dispatches will have a 48-hour cooling period.",
+      "metadata": {
+        "action": "COMMIT_ADDRESS_UPDATE",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "rbi_kyc_compliant": true,
+    "statutory_retention_years": 7
+  }
+}

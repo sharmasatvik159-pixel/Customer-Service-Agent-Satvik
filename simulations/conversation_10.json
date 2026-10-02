@@ -1,0 +1,47 @@
+{
+  "conversation_id": "SIM-CONV-10",
+  "title": "Fixed Deposit Premature Break vs Overdraft Option",
+  "intent_domain": "Deposits & Savings",
+  "primary_intent": "DEP-004",
+  "customer_profile": {
+    "customer_id": "CUST-39019",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "OTP_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Graceful Degradation Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Premature Escalation",
+    "Info Dump"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I need 1 lakh rupees urgently for 10 days. Should I break my 5 lakh Fixed Deposit?",
+      "metadata": {
+        "intent": "DEP-004",
+        "confidence": 0.95,
+        "sentiment_score": -0.1
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Breaking your 5 lakh FD will attract a 1.0% premature withdrawal penalty and reduce your earned interest rate. Alternatively, NexBank offers an instant Overdraft against Fixed Deposit: you can borrow 1 lakh at just 1% above your FD rate, pay interest only for the 10 days you use it (approx. INR 230 total), and keep your full FD earning interest. Which option would you prefer?",
+      "metadata": {
+        "action": "OFFER_OVERDRAFT_ALTERNATIVE",
+        "retrieved_kb": "KB-DEP-004",
+        "design_pattern": "Graceful Degradation (shows cost-saving alternative to destructive action)"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "deposit_retention_achieved": true,
+    "statutory_retention_years": 7
+  }
+}

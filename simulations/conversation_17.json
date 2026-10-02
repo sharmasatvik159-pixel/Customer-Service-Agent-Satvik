@@ -1,0 +1,47 @@
+{
+  "conversation_id": "SIM-CONV-17",
+  "title": "International Wire Remittance & FEMA Form A2 Guidance",
+  "intent_domain": "Transaction & Payment",
+  "primary_intent": "TXN-006",
+  "customer_profile": {
+    "customer_id": "CUST-44109",
+    "tier": "PREMIER",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Progressive Disclosure Pattern",
+    "Graceful Degradation Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Info Dump",
+    "Knowledge Hallucination"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I need to send $25,000 USD to Stanford University for my daughter's tuition fees. What documents do I need and what is the exchange rate?",
+      "metadata": {
+        "intent": "TXN-006",
+        "confidence": 0.98,
+        "sentiment_score": 0.2
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Under the RBI Liberalised Remittance Scheme (LRS), education remittances are permitted up to $250,000 USD per financial year [Source: KB-TXN-006]. Today's live IBR exchange rate is 1 USD = INR 84.15 (indicative). Required documents: 1) University admission offer / tuition invoice, 2) Form A2 LRS Declaration (pre-filled in app). Would you like me to open the online remittance form?",
+      "metadata": {
+        "action": "RETRIEVE_FEMA_GUIDANCE",
+        "retrieved_kb": "KB-TXN-006",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "fema_lrs_disclosures": true,
+    "statutory_retention_years": 7
+  }
+}

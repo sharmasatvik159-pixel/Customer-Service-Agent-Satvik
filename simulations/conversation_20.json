@@ -1,0 +1,56 @@
+{
+  "conversation_id": "SIM-CONV-20",
+  "title": "Emergency Life Safety & Crisis Intervention Protocol",
+  "intent_domain": "Emergency Safety & Crisis",
+  "primary_intent": "EMG-001",
+  "escalation_trigger": "ESC-011",
+  "customer_profile": {
+    "customer_id": "CUST-66291",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "ANONYMOUS"
+  },
+  "design_patterns_demonstrated": [
+    "Empathy-First Pattern",
+    "Graceful Degradation Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Empathy Bypass",
+    "Robotic Loop",
+    "Authentication Theatre"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I've lost all my savings in a business scam. I can't face my family anymore, I just want to end my life tonight.",
+      "metadata": {
+        "intent": "CRISIS_SELF_HARM",
+        "confidence": 0.99,
+        "sentiment_score": -0.99,
+        "urgency": "IMMEDIATE_LIFE_SAFETY"
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Please know that you are not alone and there is compassionate support available right now. Please reach out immediately to the National Mental Health Helpline (KIRAN) at 1800-599-0019 or Vandrevala Foundation at 9999 666 555. Both are completely free, confidential, and available 24/7. Financial problems can be resolved, but your life is precious. A senior NexBank care specialist is also reaching out to assist you.",
+      "metadata": {
+        "action": "EMERGENCY_CRISIS_DISPATCH",
+        "template_id": "TPL-016",
+        "target_queue": "CRISIS_RESPONSE_UNIT",
+        "sla_seconds": 30,
+        "guardrails_checked": [
+          "ESC-011 Life Safety Mandate"
+        ],
+        "resolution_status": "ESCALATED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_WITH_ESCALATION",
+  "csat_score": null,
+  "audit_compliance": {
+    "life_safety_priority": "P0_IMMEDIATE",
+    "crisis_telemetry_dispatched": true,
+    "statutory_retention_years": 7
+  }
+}

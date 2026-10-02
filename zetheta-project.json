@@ -1,0 +1,37 @@
+{
+  "project_code": "1C",
+  "project_title": "Agentic AI Customer Service Agent with Feedback Loops",
+  "organization": "NexBank Banking Group",
+  "version": "1.0.0",
+  "status": "Complete - Full 15-Day Architecture, Guardrails, Feedback Loops & Submission Packaging Finalized",
+  "target_stack": {
+    "runtime": "Python 3.11+",
+    "orchestration": ["LangChain v0.2+", "LlamaIndex v0.10+", "Temporal.io Workflow Engine"],
+    "nlu_engine": "Rasa NLU / Dual-Path Transformer Classifier",
+    "vector_databases": ["ChromaDB (Development/Edge)", "Pinecone (Enterprise Hybrid Search)"],
+    "api_framework": "FastAPI (Async ASGI)",
+    "primary_datastore": "PostgreSQL 16 with pgvector & TimescaleDB",
+    "caching_message_broker": "Redis Enterprise Cluster (State & Pub/Sub)",
+    "observability": ["OpenTelemetry", "Prometheus", "Grafana", "Langfuse"]
+  },
+  "compliance_standards": [
+    "PCI-DSS v4.0",
+    "SOC 2 Type II",
+    "GLBA Financial Privacy",
+    "GDPR / CCPA",
+    "ISO 27001"
+  ],
+  "architecture_milestones": {
+    "phase_1": "Days 1-3: Core Architecture, Topology, State Machine, Contracts, Latency & Failure Modes",
+    "phase_2": "Days 4-7: NLU Taxonomy, Hybrid Entity Extraction, Disambiguation & Fallbacks",
+    "phase_3": "Days 8-10: RAG Knowledge Base, Hybrid Vector/Lexical Retrieval & Guardrails",
+    "phase_4": "Days 11-13: Continuous Learning Pipeline, Feedback Loops & Automated Safety Preservation",
+    "phase_5": "Days 14-16: Intelligent Escalation Routing, Live Agent Handover & Metrics Dashboard"
+  },
+  "maintainers": [
+    {
+      "role": "Lead Architect & AI Systems Engineer",
+      "team": "NexBank Conversational AI & Platform Engineering"
+    }
+  ]
+}

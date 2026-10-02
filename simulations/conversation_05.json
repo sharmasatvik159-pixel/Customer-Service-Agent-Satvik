@@ -1,0 +1,88 @@
+{
+  "conversation_id": "SIM-CONV-05",
+  "title": "Multi-Turn Complaint with Sentiment Recovery",
+  "intent_domain": "Account Servicing / Customer Retention",
+  "primary_intent": "ACC-002",
+  "customer_profile": {
+    "customer_id": "CUST-66192",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Empathy-First Pattern",
+    "Confirmation-Before-Action Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Empathy Bypass",
+    "Robotic Loop",
+    "Sycophantic Recovery"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "You guys charged me a 500 rupee non-maintenance fee! I keep all my savings here and your app was down when I tried to transfer funds. Reverse this immediately or I am closing my account!",
+      "metadata": {
+        "intent": "ACC-002",
+        "confidence": 0.94,
+        "sentiment_score": -0.78,
+        "urgency": "HIGH"
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "I completely understand your frustration regarding this non-maintenance charge, especially when you encountered app downtime. Let me inspect the fee on your account right away.",
+      "metadata": {
+        "action": "EMPATHY_FIRST_ACKNOWLEDGE",
+        "template_id": "TPL-001",
+        "sentiment_trajectory": -0.78
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "Yes, check it. Account ending in 7721.",
+      "metadata": {
+        "intent": "ACC-002",
+        "sentiment_score": -0.45
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "I see the INR 500 charge debited on 28-Sep-2026. Because you maintain an excellent relationship history and our services experienced maintenance on that day, I can process a one-time courtesy fee reversal right now. Would you like me to credit INR 500 back to your account?",
+      "metadata": {
+        "action": "EVALUATE_FEE_WAIVER_POLICY",
+        "waiver_limit_inr": 1000,
+        "waiver_approved": true,
+        "design_pattern": "Confirmation-Before-Action"
+      }
+    },
+    {
+      "turn": 5,
+      "speaker": "USER",
+      "utterance": "Yes, please do that. Thank you.",
+      "metadata": {
+        "intent": "CONFIRM_ACTION",
+        "sentiment_score": 0.4
+      }
+    },
+    {
+      "turn": 6,
+      "speaker": "AGENT",
+      "utterance": "The INR 500 fee has been credited back to your account ending in 7721. Your updated balance is INR 12,450. Reference Number #REV-551920. Is there anything else I can assist you with today?",
+      "metadata": {
+        "action": "EXECUTE_FEE_REVERSAL",
+        "resolution_status": "RESOLVED",
+        "sentiment_slope": "STRONG_POSITIVE_RECOVERY"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "waiver_audit_token": "WAIVE-88129",
+    "statutory_retention_years": 7
+  }
+}

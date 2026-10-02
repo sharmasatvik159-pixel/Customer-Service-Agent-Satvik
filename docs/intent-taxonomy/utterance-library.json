@@ -1,0 +1,2273 @@
+[
+  {
+    "utterance_id": "ACC001-01",
+    "intent_id": "ACC-001",
+    "language": "en",
+    "text": "What is my current savings account balance?",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 19, "end": 26}]
+  },
+  {
+    "utterance_id": "ACC001-02",
+    "intent_id": "ACC-001",
+    "language": "en",
+    "text": "How much money do I have in my checking account ending in 4912?",
+    "entities": [{"entity": "account_type", "value": "checking", "start": 31, "end": 39}, {"entity": "account_number_last4", "value": "4912", "start": 58, "end": 62}]
+  },
+  {
+    "utterance_id": "ACC001-03",
+    "intent_id": "ACC-001",
+    "language": "hi",
+    "text": "मेरे बचत खाते में कितना पैसा बचा है?",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 5, "end": 14}]
+  },
+  {
+    "utterance_id": "ACC001-04",
+    "intent_id": "ACC-001",
+    "language": "hi-en",
+    "text": "Mera account balance check karke batao please",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC001-05",
+    "intent_id": "ACC-001",
+    "language": "hi-en",
+    "text": "Mera salary account me kitna balance hai abhi?",
+    "entities": [{"entity": "account_type", "value": "salary", "start": 5, "end": 11}]
+  },
+  {
+    "utterance_id": "ACC001-06",
+    "intent_id": "ACC-001",
+    "language": "en",
+    "text": "Check available funds in account 8831",
+    "entities": [{"entity": "account_number_last4", "value": "8831", "start": 33, "end": 37}]
+  },
+  {
+    "utterance_id": "ACC001-07",
+    "intent_id": "ACC-001",
+    "language": "hi-en",
+    "text": "Kitna balance bacha hai mere account me?",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC001-08",
+    "intent_id": "ACC-001",
+    "language": "en",
+    "text": "Show me the available and ledger balance for my primary account",
+    "entities": [{"entity": "account_type", "value": "primary", "start": 48, "end": 55}]
+  },
+  {
+    "utterance_id": "ACC001-09",
+    "intent_id": "ACC-001",
+    "language": "hi",
+    "text": "खाते का बैलेंस दिखाओ",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC001-10",
+    "intent_id": "ACC-001",
+    "language": "hi-en",
+    "text": "Bhai mere savings account me kitne paise pade hai?",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 10, "end": 17}]
+  },
+
+  {
+    "utterance_id": "ACC002-01",
+    "intent_id": "ACC-002",
+    "language": "en",
+    "text": "Please email me my bank statement for the last 3 months",
+    "entities": [{"entity": "date_range", "value": "last 3 months", "start": 43, "end": 56}, {"entity": "delivery_channel", "value": "email", "start": 7, "end": 12}]
+  },
+  {
+    "utterance_id": "ACC002-02",
+    "intent_id": "ACC-002",
+    "language": "en",
+    "text": "Download PDF account statement for April 2026",
+    "entities": [{"entity": "file_format", "value": "PDF", "start": 9, "end": 12}, {"entity": "date_range", "value": "April 2026", "start": 35, "end": 45}]
+  },
+  {
+    "utterance_id": "ACC002-03",
+    "intent_id": "ACC-002",
+    "language": "hi",
+    "text": "मुझे पिछले छह महीने का बैंक स्टेटमेंट चाहिए",
+    "entities": [{"entity": "date_range", "value": "last 6 months", "start": 5, "end": 19}]
+  },
+  {
+    "utterance_id": "ACC002-04",
+    "intent_id": "ACC-002",
+    "language": "hi-en",
+    "text": "Mera pichle 1 saal ka bank statement email par bhej do",
+    "entities": [{"entity": "date_range", "value": "last 1 year", "start": 5, "end": 18}, {"entity": "delivery_channel", "value": "email", "start": 37, "end": 42}]
+  },
+  {
+    "utterance_id": "ACC002-05",
+    "intent_id": "ACC-002",
+    "language": "hi-en",
+    "text": "Can I get statement for last month in PDF format?",
+    "entities": [{"entity": "date_range", "value": "last month", "start": 24, "end": 34}, {"entity": "file_format", "value": "PDF", "start": 38, "end": 41}]
+  },
+  {
+    "utterance_id": "ACC002-06",
+    "intent_id": "ACC-002",
+    "language": "en",
+    "text": "Send mini statement of last 5 transactions to my registered email",
+    "entities": [{"entity": "delivery_channel", "value": "email", "start": 60, "end": 65}]
+  },
+  {
+    "utterance_id": "ACC002-07",
+    "intent_id": "ACC-002",
+    "language": "hi-en",
+    "text": "Last quarter ka statement download karna hai kaise karun?",
+    "entities": [{"entity": "date_range", "value": "last quarter", "start": 0, "end": 12}]
+  },
+  {
+    "utterance_id": "ACC002-08",
+    "intent_id": "ACC-002",
+    "language": "hi",
+    "text": "ईमेल पर खाते का विवरण भेज दीजिए",
+    "entities": [{"entity": "delivery_channel", "value": "email", "start": 0, "end": 4}]
+  },
+  {
+    "utterance_id": "ACC002-09",
+    "intent_id": "ACC-002",
+    "language": "en",
+    "text": "I need my financial year 2025-2026 interest and account statement",
+    "entities": [{"entity": "date_range", "value": "2025-2026", "start": 25, "end": 34}]
+  },
+  {
+    "utterance_id": "ACC002-10",
+    "intent_id": "ACC-002",
+    "language": "hi-en",
+    "text": "Mujhe statement chahiye mere savings account ka",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 29, "end": 36}]
+  },
+
+  {
+    "utterance_id": "ACC003-01",
+    "intent_id": "ACC-003",
+    "language": "en",
+    "text": "I need to update my mobile phone number to +919876543210",
+    "entities": [{"entity": "contact_field", "value": "PHONE", "start": 20, "end": 39}, {"entity": "phone_number", "value": "+919876543210", "start": 43, "end": 56}]
+  },
+  {
+    "utterance_id": "ACC003-02",
+    "intent_id": "ACC-003",
+    "language": "en",
+    "text": "Change my registered email address to rohit.verma@example.com",
+    "entities": [{"entity": "contact_field", "value": "EMAIL", "start": 21, "end": 34}, {"entity": "email", "value": "rohit.verma@example.com", "start": 38, "end": 61}]
+  },
+  {
+    "utterance_id": "ACC003-03",
+    "intent_id": "ACC-003",
+    "language": "hi",
+    "text": "मुझे बैंक खाते में अपना मोबाइल नंबर बदलना है",
+    "entities": [{"entity": "contact_field", "value": "PHONE", "start": 24, "end": 35}]
+  },
+  {
+    "utterance_id": "ACC003-04",
+    "intent_id": "ACC-003",
+    "language": "hi-en",
+    "text": "Mera mobile number change karna hai naya number add karo",
+    "entities": [{"entity": "contact_field", "value": "PHONE", "start": 5, "end": 18}]
+  },
+  {
+    "utterance_id": "ACC003-05",
+    "intent_id": "ACC-003",
+    "language": "hi-en",
+    "text": "Email id update karne ka process kya hai bank account me?",
+    "entities": [{"entity": "contact_field", "value": "EMAIL", "start": 0, "end": 8}]
+  },
+  {
+    "utterance_id": "ACC003-06",
+    "intent_id": "ACC-003",
+    "language": "en",
+    "text": "Update secondary contact number for OTP alerts",
+    "entities": [{"entity": "contact_field", "value": "PHONE", "start": 7, "end": 31}]
+  },
+  {
+    "utterance_id": "ACC003-07",
+    "intent_id": "ACC-003",
+    "language": "hi-en",
+    "text": "Purana phone number band ho gaya hai new phone link karna hai",
+    "entities": [{"entity": "contact_field", "value": "PHONE", "start": 7, "end": 19}]
+  },
+  {
+    "utterance_id": "ACC003-08",
+    "intent_id": "ACC-003",
+    "language": "en",
+    "text": "Can I modify my contact email online without visiting the branch?",
+    "entities": [{"entity": "contact_field", "value": "EMAIL", "start": 16, "end": 29}]
+  },
+  {
+    "utterance_id": "ACC003-09",
+    "intent_id": "ACC-003",
+    "language": "hi",
+    "text": "मेरा ईमेल आईडी अपडेट कर दीजिए",
+    "entities": [{"entity": "contact_field", "value": "EMAIL", "start": 5, "end": 14}]
+  },
+  {
+    "utterance_id": "ACC003-10",
+    "intent_id": "ACC-003",
+    "language": "hi-en",
+    "text": "Phone number change request kaise raise kare?",
+    "entities": [{"entity": "contact_field", "value": "PHONE", "start": 0, "end": 12}]
+  },
+
+  {
+    "utterance_id": "ACC004-01",
+    "intent_id": "ACC-004",
+    "language": "en",
+    "text": "I have shifted houses and need to update my postal address",
+    "entities": [{"entity": "address", "value": "postal address", "start": 43, "end": 57}]
+  },
+  {
+    "utterance_id": "ACC004-02",
+    "intent_id": "ACC-004",
+    "language": "en",
+    "text": "Change my communication address to Flat 402, Green Glen, Bangalore 560103",
+    "entities": [{"entity": "pincode", "value": "560103", "start": 68, "end": 74}, {"entity": "city", "value": "Bangalore", "start": 57, "end": 66}]
+  },
+  {
+    "utterance_id": "ACC004-03",
+    "intent_id": "ACC-004",
+    "language": "hi",
+    "text": "मेरे खाते का पता बदल दीजिए, मैं नए घर में शिफ्ट हो गया हूँ",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC004-04",
+    "intent_id": "ACC-004",
+    "language": "hi-en",
+    "text": "Mera permanent address change karna hai Aadhaar OTP se",
+    "entities": [{"entity": "proof_type", "value": "Aadhaar OTP", "start": 40, "end": 51}]
+  },
+  {
+    "utterance_id": "ACC004-05",
+    "intent_id": "ACC-004",
+    "language": "hi-en",
+    "text": "Bank account me correspondence address kaise update kare online?",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC004-06",
+    "intent_id": "ACC-004",
+    "language": "en",
+    "text": "Update mailing address for checkbook and card delivery",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC004-07",
+    "intent_id": "ACC-004",
+    "language": "hi-en",
+    "text": "Naya address add karna hai passbook par",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC004-08",
+    "intent_id": "ACC-004",
+    "language": "en",
+    "text": "Can I submit electricity bill to change my home address in the account?",
+    "entities": [{"entity": "proof_type", "value": "electricity bill", "start": 14, "end": 30}]
+  },
+  {
+    "utterance_id": "ACC004-09",
+    "intent_id": "ACC-004",
+    "language": "hi",
+    "text": "घर का नया पता रजिस्टर करना है",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC004-10",
+    "intent_id": "ACC-004",
+    "language": "hi-en",
+    "text": "Mera pincode aur address badal gaya hai update kara do",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "ACC005-01",
+    "intent_id": "ACC-005",
+    "language": "en",
+    "text": "I want to permanently close my savings account ending in 7741",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 32, "end": 39}, {"entity": "account_number_last4", "value": "7741", "start": 57, "end": 61}]
+  },
+  {
+    "utterance_id": "ACC005-02",
+    "intent_id": "ACC-005",
+    "language": "en",
+    "text": "How do I close my inactive current account and transfer funds out?",
+    "entities": [{"entity": "account_type", "value": "current", "start": 27, "end": 34}]
+  },
+  {
+    "utterance_id": "ACC005-03",
+    "intent_id": "ACC-005",
+    "language": "hi",
+    "text": "मुझे अपना बैंक खाता हमेशा के लिए बंद करवाना है",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC005-04",
+    "intent_id": "ACC-005",
+    "language": "hi-en",
+    "text": "Mera NexBank account close karna hai bacha hua balance dusre bank me bhej do",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC005-05",
+    "intent_id": "ACC-005",
+    "language": "hi-en",
+    "text": "Savings account band karne ka procedure kya hai?",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 0, "end": 7}]
+  },
+  {
+    "utterance_id": "ACC005-06",
+    "intent_id": "ACC-005",
+    "language": "en",
+    "text": "Terminate my checking account and issue a cashier check for balance",
+    "entities": [{"entity": "account_type", "value": "checking", "start": 13, "end": 21}]
+  },
+  {
+    "utterance_id": "ACC005-07",
+    "intent_id": "ACC-005",
+    "language": "hi-en",
+    "text": "Account band karne me kitna charge lagta hai?",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC005-08",
+    "intent_id": "ACC-005",
+    "language": "en",
+    "text": "Please initiate account closure for my secondary savings account",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 49, "end": 56}]
+  },
+  {
+    "utterance_id": "ACC005-09",
+    "intent_id": "ACC-005",
+    "language": "hi",
+    "text": "खाता बंद करने के लिए क्या फॉर्म भरना पड़ेगा?",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC005-10",
+    "intent_id": "ACC-005",
+    "language": "hi-en",
+    "text": "Main apna account surrender karna chahta hoon",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "ACC006-01",
+    "intent_id": "ACC-006",
+    "language": "en",
+    "text": "I want to add my wife Priya Sharma as nominee in my account",
+    "entities": [{"entity": "nominee_name", "value": "Priya Sharma", "start": 22, "end": 34}, {"entity": "relationship", "value": "wife", "start": 17, "end": 21}]
+  },
+  {
+    "utterance_id": "ACC006-02",
+    "intent_id": "ACC-006",
+    "language": "en",
+    "text": "How can I update nominee details for my fixed deposit?",
+    "entities": [{"entity": "product_type", "value": "fixed deposit", "start": 40, "end": 53}]
+  },
+  {
+    "utterance_id": "ACC006-03",
+    "intent_id": "ACC-006",
+    "language": "hi",
+    "text": "खाते में नॉमिनी का नाम कैसे जोड़ें?",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC006-04",
+    "intent_id": "ACC-006",
+    "language": "hi-en",
+    "text": "Nominee change karna hai mere savings account me",
+    "entities": [{"entity": "account_type", "value": "savings", "start": 30, "end": 37}]
+  },
+  {
+    "utterance_id": "ACC006-05",
+    "intent_id": "ACC-006",
+    "language": "hi-en",
+    "text": "Mere account me current nominee kaun registered hai check karo",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC006-06",
+    "intent_id": "ACC-006",
+    "language": "en",
+    "text": "Register my son as secondary nominee with 50% allocation",
+    "entities": [{"entity": "relationship", "value": "son", "start": 12, "end": 15}, {"entity": "allocation_percentage", "value": "50", "start": 42, "end": 44}]
+  },
+  {
+    "utterance_id": "ACC006-07",
+    "intent_id": "ACC-006",
+    "language": "hi-en",
+    "text": "Online nominee update form kahan milega app me?",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC006-08",
+    "intent_id": "ACC-006",
+    "language": "en",
+    "text": "Replace existing nominee with my daughter Anita Verma",
+    "entities": [{"entity": "relationship", "value": "daughter", "start": 33, "end": 41}, {"entity": "nominee_name", "value": "Anita Verma", "start": 42, "end": 53}]
+  },
+  {
+    "utterance_id": "ACC006-09",
+    "intent_id": "ACC-006",
+    "language": "hi",
+    "text": "मेरे खाते का नॉमिनेशन विवरण बदलिए",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC006-10",
+    "intent_id": "ACC-006",
+    "language": "hi-en",
+    "text": "Nominee ka date of birth aur address update karna hai",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "ACC007-01",
+    "intent_id": "ACC-007",
+    "language": "en",
+    "text": "I want to upgrade my Classic account to Premier Wealth tier",
+    "entities": [{"entity": "target_tier", "value": "Premier Wealth", "start": 40, "end": 54}]
+  },
+  {
+    "utterance_id": "ACC007-02",
+    "intent_id": "ACC-007",
+    "language": "en",
+    "text": "Downgrade my account to zero balance Basic Savings Bank account",
+    "entities": [{"entity": "target_tier", "value": "BSBD", "start": 37, "end": 62}]
+  },
+  {
+    "utterance_id": "ACC007-03",
+    "intent_id": "ACC-007",
+    "language": "hi",
+    "text": "क्या मैं अपना खाता सैलरी खाते में बदल सकता हूँ?",
+    "entities": [{"entity": "target_tier", "value": "salary", "start": 20, "end": 32}]
+  },
+  {
+    "utterance_id": "ACC007-04",
+    "intent_id": "ACC-007",
+    "language": "hi-en",
+    "text": "Mera account standard savings se gold tier me upgrade kardo",
+    "entities": [{"entity": "target_tier", "value": "gold", "start": 33, "end": 37}]
+  },
+  {
+    "utterance_id": "ACC007-05",
+    "intent_id": "ACC-007",
+    "language": "hi-en",
+    "text": "Premier account upgrade karne ke liye minimum balance kitna rakhna hoga?",
+    "entities": [{"entity": "target_tier", "value": "premier", "start": 0, "end": 7}]
+  },
+  {
+    "utterance_id": "ACC007-06",
+    "intent_id": "ACC-007",
+    "language": "en",
+    "text": "Convert my regular savings account to Senior Citizen Advantage scheme",
+    "entities": [{"entity": "target_tier", "value": "Senior Citizen", "start": 38, "end": 52}]
+  },
+  {
+    "utterance_id": "ACC007-07",
+    "intent_id": "ACC-007",
+    "language": "hi-en",
+    "text": "Mujhe mera account downgrade karna hai charges avoid karne ke liye",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC007-08",
+    "intent_id": "ACC-007",
+    "language": "en",
+    "text": "Check eligibility for upgrading to NexBank Privilege Banking",
+    "entities": [{"entity": "target_tier", "value": "Privilege", "start": 35, "end": 44}]
+  },
+  {
+    "utterance_id": "ACC007-09",
+    "intent_id": "ACC-007",
+    "language": "hi",
+    "text": "खाते की श्रेणी बदलने के नियम बताइए",
+    "entities": []
+  },
+  {
+    "utterance_id": "ACC007-10",
+    "intent_id": "ACC-007",
+    "language": "hi-en",
+    "text": "Kya online savings tier change ho sakta hai bina branch gaye?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "TXN001-01",
+    "intent_id": "TXN-001",
+    "language": "en",
+    "text": "What is the status of my transfer with reference TXN991204?",
+    "entities": [{"entity": "transaction_identifier", "value": "TXN991204", "start": 48, "end": 57}]
+  },
+  {
+    "utterance_id": "TXN001-02",
+    "intent_id": "TXN-001",
+    "language": "en",
+    "text": "Did my 2500 payment to Zomato go through today?",
+    "entities": [{"entity": "amount", "value": "2500", "start": 7, "end": 11}, {"entity": "merchant_name", "value": "Zomato", "start": 23, "end": 29}]
+  },
+  {
+    "utterance_id": "TXN001-03",
+    "intent_id": "TXN-001",
+    "language": "hi",
+    "text": "मेरे कल के 10000 रुपये के ट्रांसफर का स्टेटस क्या है?",
+    "entities": [{"entity": "amount", "value": "10000", "start": 12, "end": 17}]
+  },
+  {
+    "utterance_id": "TXN001-04",
+    "intent_id": "TXN-001",
+    "language": "hi-en",
+    "text": "Mera 5000 ka transfer pending dikha raha hai, status batao",
+    "entities": [{"entity": "amount", "value": "5000", "start": 5, "end": 9}]
+  },
+  {
+    "utterance_id": "TXN001-05",
+    "intent_id": "TXN-001",
+    "language": "hi-en",
+    "text": "Check karo Swiggy ko payment hua ya fail ho gaya",
+    "entities": [{"entity": "merchant_name", "value": "Swiggy", "start": 11, "end": 17}]
+  },
+  {
+    "utterance_id": "TXN001-06",
+    "intent_id": "TXN-001",
+    "language": "en",
+    "text": "Track status of my interbank payment sent this morning",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN001-07",
+    "intent_id": "TXN-001",
+    "language": "hi-en",
+    "text": "Mera UTR number 2026100299881 ka clearing status kya hai?",
+    "entities": [{"entity": "transaction_identifier", "value": "2026100299881", "start": 16, "end": 29}]
+  },
+  {
+    "utterance_id": "TXN001-08",
+    "intent_id": "TXN-001",
+    "language": "en",
+    "text": "Is transaction 77192 cleared or still in settlement?",
+    "entities": [{"entity": "transaction_identifier", "value": "77192", "start": 15, "end": 20}]
+  },
+  {
+    "utterance_id": "TXN001-09",
+    "intent_id": "TXN-001",
+    "language": "hi",
+    "text": "क्या मेरे खाते से पैसा कटकर सामने वाले को मिल गया?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN001-10",
+    "intent_id": "TXN-001",
+    "language": "hi-en",
+    "text": "Payment successful hua ya nahi kaise pata chalega?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "TXN002-01",
+    "intent_id": "TXN-002",
+    "language": "en",
+    "text": "I was charged twice for 1499 at Amazon, I want to raise a dispute",
+    "entities": [{"entity": "amount", "value": "1499", "start": 24, "end": 28}, {"entity": "merchant_name", "value": "Amazon", "start": 32, "end": 38}, {"entity": "dispute_reason", "value": "charged twice", "start": 6, "end": 19}]
+  },
+  {
+    "utterance_id": "TXN002-02",
+    "intent_id": "TXN-002",
+    "language": "en",
+    "text": "ATM did not dispense cash of 5000 but account was debited",
+    "entities": [{"entity": "amount", "value": "5000", "start": 29, "end": 33}, {"entity": "dispute_reason", "value": "ATM cash not dispensed", "start": 0, "end": 25}]
+  },
+  {
+    "utterance_id": "TXN002-03",
+    "intent_id": "TXN-002",
+    "language": "hi",
+    "text": "एटीएम से पैसे नहीं निकले लेकिन खाते से 2000 कट गए, शिकायत दर्ज करें",
+    "entities": [{"entity": "amount", "value": "2000", "start": 39, "end": 43}]
+  },
+  {
+    "utterance_id": "TXN002-04",
+    "intent_id": "TXN-002",
+    "language": "hi-en",
+    "text": "Flipkart ne order cancel kar diya par refund nahi aaya dispute raise karo",
+    "entities": [{"entity": "merchant_name", "value": "Flipkart", "start": 0, "end": 8}]
+  },
+  {
+    "utterance_id": "TXN002-05",
+    "intent_id": "TXN-002",
+    "language": "hi-en",
+    "text": "Mera 3500 ka galat deduction hua hai merchant overcharge kiya",
+    "entities": [{"entity": "amount", "value": "3500", "start": 5, "end": 9}, {"entity": "dispute_reason", "value": "overcharge", "start": 46, "end": 56}]
+  },
+  {
+    "utterance_id": "TXN002-06",
+    "intent_id": "TXN-002",
+    "language": "en",
+    "text": "File a chargeback for transaction TXN88291, goods never delivered",
+    "entities": [{"entity": "transaction_identifier", "value": "TXN88291", "start": 34, "end": 42}, {"entity": "dispute_reason", "value": "goods never delivered", "start": 44, "end": 65}]
+  },
+  {
+    "utterance_id": "TXN002-07",
+    "intent_id": "TXN-002",
+    "language": "hi-en",
+    "text": "Duplicate debit dispute form kaise bharna hai?",
+    "entities": [{"entity": "dispute_reason", "value": "Duplicate debit", "start": 0, "end": 15}]
+  },
+  {
+    "utterance_id": "TXN002-08",
+    "intent_id": "TXN-002",
+    "language": "en",
+    "text": "Merchant billed me wrong amount of 1200 instead of 600",
+    "entities": [{"entity": "amount", "value": "1200", "start": 35, "end": 39}]
+  },
+  {
+    "utterance_id": "TXN002-09",
+    "intent_id": "TXN-002",
+    "language": "hi",
+    "text": "गलत ट्रांजैक्शन का क्लेम करना है",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN002-10",
+    "intent_id": "TXN-002",
+    "language": "hi-en",
+    "text": "Main is transaction ko dispute karna chahta hoon refund kab milega?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "TXN003-01",
+    "intent_id": "TXN-003",
+    "language": "en",
+    "text": "My UPI payment failed but money was deducted from my account",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN003-02",
+    "intent_id": "TXN-003",
+    "language": "en",
+    "text": "UPI transfer of 1500 to rahul@okicici failed, when will I get auto-reversal?",
+    "entities": [{"entity": "amount", "value": "1500", "start": 16, "end": 20}, {"entity": "upi_id", "value": "rahul@okicici", "start": 24, "end": 37}]
+  },
+  {
+    "utterance_id": "TXN003-03",
+    "intent_id": "TXN-003",
+    "language": "hi",
+    "text": "यूपीआई से पैसे भेजे थे, कट गए पर सामने वाले को नहीं पहुंचे",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN003-04",
+    "intent_id": "TXN-003",
+    "language": "hi-en",
+    "text": "Google Pay transaction fail ho gaya par bank se 2000 debit ho gaya",
+    "entities": [{"entity": "amount", "value": "2000", "start": 48, "end": 52}]
+  },
+  {
+    "utterance_id": "TXN003-05",
+    "intent_id": "TXN-003",
+    "language": "hi-en",
+    "text": "UPI auto-reversal kitne din me aata hai agar payment decline ho jaye?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN003-06",
+    "intent_id": "TXN-003",
+    "language": "en",
+    "text": "Check NPCI reversal status for UPI reference 429188102910",
+    "entities": [{"entity": "upi_ref", "value": "429188102910", "start": 45, "end": 57}]
+  },
+  {
+    "utterance_id": "TXN003-07",
+    "intent_id": "TXN-003",
+    "language": "hi-en",
+    "text": "Paytm UPI se payment kiya tha error aa gaya par balance cut gaya",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN003-08",
+    "intent_id": "TXN-003",
+    "language": "en",
+    "text": "My phonepe UPI debit of 800 shows failed at merchant side",
+    "entities": [{"entity": "amount", "value": "800", "start": 24, "end": 27}]
+  },
+  {
+    "utterance_id": "TXN003-09",
+    "intent_id": "TXN-003",
+    "language": "hi",
+    "text": "यूपीआई रिफंड कब तक वापस आएगा?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN003-10",
+    "intent_id": "TXN-003",
+    "language": "hi-en",
+    "text": "UPI failure complaint kaise register hoti hai?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "TXN004-01",
+    "intent_id": "TXN-004",
+    "language": "en",
+    "text": "Check status of NEFT transfer with UTR NEXB20261002019",
+    "entities": [{"entity": "utr_number", "value": "NEXB20261002019", "start": 35, "end": 50}]
+  },
+  {
+    "utterance_id": "TXN004-02",
+    "intent_id": "TXN-004",
+    "language": "en",
+    "text": "When will my RTGS transfer of 250000 reach the beneficiary bank?",
+    "entities": [{"entity": "amount", "value": "250000", "start": 30, "end": 36}]
+  },
+  {
+    "utterance_id": "TXN004-03",
+    "intent_id": "TXN-004",
+    "language": "hi",
+    "text": "एनईएफटी से भेजा हुआ पैसा अभी तक क्यों नहीं पहुंचा?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN004-04",
+    "intent_id": "TXN-004",
+    "language": "hi-en",
+    "text": "Mera RTGS settlement hua ya batch pending hai?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN004-05",
+    "intent_id": "TXN-004",
+    "language": "hi-en",
+    "text": "NEFT transaction ka UTR number kahan se milega?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN004-06",
+    "intent_id": "TXN-004",
+    "language": "en",
+    "text": "Has my 50000 NEFT cleared or returned due to wrong IFSC?",
+    "entities": [{"entity": "amount", "value": "50000", "start": 7, "end": 12}]
+  },
+  {
+    "utterance_id": "TXN004-07",
+    "intent_id": "TXN-004",
+    "language": "hi-en",
+    "text": "Aaj subah jo RTGS kiya tha uska clearing confirmation do",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN004-08",
+    "intent_id": "TXN-004",
+    "language": "en",
+    "text": "What is the typical processing time for Sunday NEFT transfers?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN004-09",
+    "intent_id": "TXN-004",
+    "language": "hi",
+    "text": "आरटीजीएस ट्रांसफर की स्थिति बताइए",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN004-10",
+    "intent_id": "TXN-004",
+    "language": "hi-en",
+    "text": "NEFT fail hone par paisa kab wapas account me credit hota hai?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "TXN005-01",
+    "intent_id": "TXN-005",
+    "language": "en",
+    "text": "I want to cancel the recurring auto-debit for Netflix on my account",
+    "entities": [{"entity": "action_type", "value": "CANCEL", "start": 10, "end": 16}, {"entity": "mandate_identifier", "value": "Netflix", "start": 45, "end": 52}]
+  },
+  {
+    "utterance_id": "TXN005-02",
+    "intent_id": "TXN-005",
+    "language": "en",
+    "text": "Setup a monthly standing instruction of 10000 to my mutual fund SIP",
+    "entities": [{"entity": "action_type", "value": "SETUP", "start": 0, "end": 5}, {"entity": "amount", "value": "10000", "start": 40, "end": 45}]
+  },
+  {
+    "utterance_id": "TXN005-03",
+    "intent_id": "TXN-005",
+    "language": "hi",
+    "text": "मेरे खाते से ऑटो-पे मैंडेट बंद कर दीजिए",
+    "entities": [{"entity": "action_type", "value": "CANCEL", "start": 23, "end": 25}]
+  },
+  {
+    "utterance_id": "TXN005-04",
+    "intent_id": "TXN-005",
+    "language": "hi-en",
+    "text": "SIP ka auto debit mandate pause karna hai agle do mahine ke liye",
+    "entities": [{"entity": "action_type", "value": "PAUSE", "start": 26, "end": 31}]
+  },
+  {
+    "utterance_id": "TXN005-05",
+    "intent_id": "TXN-005",
+    "language": "hi-en",
+    "text": "Kaun kaun se active e-mandates chal rahe hai mere account par?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN005-06",
+    "intent_id": "TXN-005",
+    "language": "en",
+    "text": "Revoke NACH mandate for loan EMI payment",
+    "entities": [{"entity": "action_type", "value": "CANCEL", "start": 0, "end": 6}]
+  },
+  {
+    "utterance_id": "TXN005-07",
+    "intent_id": "TXN-005",
+    "language": "hi-en",
+    "text": "Gym membership ka monthly auto payment cancel karna hai",
+    "entities": [{"entity": "action_type", "value": "CANCEL", "start": 39, "end": 45}, {"entity": "mandate_identifier", "value": "Gym membership", "start": 0, "end": 14}]
+  },
+  {
+    "utterance_id": "TXN005-08",
+    "intent_id": "TXN-005",
+    "language": "en",
+    "text": "How do I modify the max debit limit of my UPI AutoPay mandate?",
+    "entities": [{"entity": "action_type", "value": "MODIFY", "start": 10, "end": 16}]
+  },
+  {
+    "utterance_id": "TXN005-09",
+    "intent_id": "TXN-005",
+    "language": "hi",
+    "text": "हर महीने बिजली बिल का ऑटोमेटिक भुगतान चालू करें",
+    "entities": [{"entity": "action_type", "value": "SETUP", "start": 37, "end": 41}]
+  },
+  {
+    "utterance_id": "TXN005-10",
+    "intent_id": "TXN-005",
+    "language": "hi-en",
+    "text": "Standing instruction set karna hai savings account me",
+    "entities": [{"entity": "action_type", "value": "SETUP", "start": 21, "end": 24}]
+  },
+
+  {
+    "utterance_id": "TXN006-01",
+    "intent_id": "TXN-006",
+    "language": "en",
+    "text": "I want to wire 5000 USD to a university account in New York",
+    "entities": [{"entity": "amount", "value": "5000", "start": 15, "end": 19}, {"entity": "currency", "value": "USD", "start": 20, "end": 23}]
+  },
+  {
+    "utterance_id": "TXN006-02",
+    "intent_id": "TXN-006",
+    "language": "en",
+    "text": "What is the SWIFT transfer fee and FX rate for sending GBP to London?",
+    "entities": [{"entity": "currency", "value": "GBP", "start": 55, "end": 58}]
+  },
+  {
+    "utterance_id": "TXN006-03",
+    "intent_id": "TXN-006",
+    "language": "hi",
+    "text": "विदेश में पैसे भेजने के लिए क्या नियम और लिमिट है?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN006-04",
+    "intent_id": "TXN-006",
+    "language": "hi-en",
+    "text": "USA me mere relative ko dollars transfer karne hai outward remittance se",
+    "entities": [{"entity": "currency", "value": "USD", "start": 24, "end": 31}]
+  },
+  {
+    "utterance_id": "TXN006-05",
+    "intent_id": "TXN-006",
+    "language": "hi-en",
+    "text": "LRS limit ke under international wire transfer kaise initiate kare?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN006-06",
+    "intent_id": "TXN-006",
+    "language": "en",
+    "text": "Track outward international telegraphic wire reference SWFT881920",
+    "entities": [{"entity": "reference_id", "value": "SWFT881920", "start": 55, "end": 65}]
+  },
+  {
+    "utterance_id": "TXN006-07",
+    "intent_id": "TXN-006",
+    "language": "hi-en",
+    "text": "Foreign remittance par kitna TCS tax katega?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN006-08",
+    "intent_id": "TXN-006",
+    "language": "en",
+    "text": "What documentation is required for remitting student tuition abroad?",
+    "entities": [{"entity": "purpose_code", "value": "tuition abroad", "start": 45, "end": 59}]
+  },
+  {
+    "utterance_id": "TXN006-09",
+    "intent_id": "TXN-006",
+    "language": "hi",
+    "text": "कनाडा में पढ़ाई के लिए फीस कैसे ट्रांसफर करें?",
+    "entities": []
+  },
+  {
+    "utterance_id": "TXN006-10",
+    "intent_id": "TXN-006",
+    "language": "hi-en",
+    "text": "Overseas bank transfer karne ke liye IBAN aur SWIFT code chahiye kya?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "CRD001-01",
+    "intent_id": "CRD-001",
+    "language": "en",
+    "text": "Please block my debit card ending in 4912 immediately",
+    "entities": [{"entity": "card_last_four", "value": "4912", "start": 37, "end": 41}, {"entity": "action", "value": "BLOCK", "start": 7, "end": 12}]
+  },
+  {
+    "utterance_id": "CRD001-02",
+    "intent_id": "CRD-001",
+    "language": "en",
+    "text": "I misplaced my credit card, please freeze it temporarily",
+    "entities": [{"entity": "action", "value": "TEMPORARY_BLOCK", "start": 35, "end": 41}]
+  },
+  {
+    "utterance_id": "CRD001-03",
+    "intent_id": "CRD-001",
+    "language": "hi",
+    "text": "मेरा डेबिट कार्ड खो गया है, उसे तुरंत ब्लॉक कर दीजिए",
+    "entities": [{"entity": "action", "value": "BLOCK", "start": 38, "end": 43}]
+  },
+  {
+    "utterance_id": "CRD001-04",
+    "intent_id": "CRD-001",
+    "language": "hi-en",
+    "text": "Mera ATM card lock kardo jaldi, card gir gaya hai",
+    "entities": [{"entity": "action", "value": "BLOCK", "start": 14, "end": 18}]
+  },
+  {
+    "utterance_id": "CRD001-05",
+    "intent_id": "CRD-001",
+    "language": "hi-en",
+    "text": "Card mil gaya hai, ab card 8812 ko unblock kaise karun?",
+    "entities": [{"entity": "card_last_four", "value": "8812", "start": 27, "end": 31}, {"entity": "action", "value": "UNBLOCK", "start": 35, "end": 42}]
+  },
+  {
+    "utterance_id": "CRD001-06",
+    "intent_id": "CRD-001",
+    "language": "en",
+    "text": "Unfreeze my credit card for international online transactions",
+    "entities": [{"entity": "action", "value": "UNBLOCK", "start": 0, "end": 8}]
+  },
+  {
+    "utterance_id": "CRD001-07",
+    "intent_id": "CRD-001",
+    "language": "hi-en",
+    "text": "Temporarily card freeze karna hai security reason se",
+    "entities": [{"entity": "action", "value": "TEMPORARY_BLOCK", "start": 17, "end": 23}]
+  },
+  {
+    "utterance_id": "CRD001-08",
+    "intent_id": "CRD-001",
+    "language": "en",
+    "text": "Permanent hotlist my stolen Visa card ending 1024",
+    "entities": [{"entity": "card_last_four", "value": "1024", "start": 45, "end": 49}, {"entity": "action", "value": "PERMANENT_BLOCK", "start": 10, "end": 17}]
+  },
+  {
+    "utterance_id": "CRD001-09",
+    "intent_id": "CRD-001",
+    "language": "hi",
+    "text": "क्रेडिट कार्ड को अनब्लॉक करना है",
+    "entities": [{"entity": "action", "value": "UNBLOCK", "start": 17, "end": 24}]
+  },
+  {
+    "utterance_id": "CRD001-10",
+    "intent_id": "CRD-001",
+    "language": "hi-en",
+    "text": "Bhai mera debit card turant block kar do emergency hai",
+    "entities": [{"entity": "action", "value": "BLOCK", "start": 28, "end": 33}]
+  },
+
+  {
+    "utterance_id": "CRD002-01",
+    "intent_id": "CRD-002",
+    "language": "en",
+    "text": "My debit card chip is damaged, I need a replacement card",
+    "entities": [{"entity": "reason", "value": "damaged", "start": 22, "end": 29}]
+  },
+  {
+    "utterance_id": "CRD002-02",
+    "intent_id": "CRD-002",
+    "language": "en",
+    "text": "Order a new replacement credit card to my office address",
+    "entities": [{"entity": "dispatch_address", "value": "office", "start": 42, "end": 48}]
+  },
+  {
+    "utterance_id": "CRD002-03",
+    "intent_id": "CRD-002",
+    "language": "hi",
+    "text": "मेरा पुराना एटीएम कार्ड खराब हो गया है, नया कार्ड कैसे मंगाएं?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD002-04",
+    "intent_id": "CRD-002",
+    "language": "hi-en",
+    "text": "Replacement card order karna hai home address par bhej do",
+    "entities": [{"entity": "dispatch_address", "value": "home", "start": 32, "end": 36}]
+  },
+  {
+    "utterance_id": "CRD002-05",
+    "intent_id": "CRD-002",
+    "language": "hi-en",
+    "text": "Mera credit card expire hone wala hai renewal card kab aayega?",
+    "entities": [{"entity": "reason", "value": "expire", "start": 17, "end": 23}]
+  },
+  {
+    "utterance_id": "CRD002-06",
+    "intent_id": "CRD-002",
+    "language": "en",
+    "text": "What is the reissue charge for ordering a replacement debit card?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD002-07",
+    "intent_id": "CRD-002",
+    "language": "hi-en",
+    "text": "Naya contactless card apply karna hai online",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD002-08",
+    "intent_id": "CRD-002",
+    "language": "en",
+    "text": "Track delivery status of my reissued debit card dispatched yesterday",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD002-09",
+    "intent_id": "CRD-002",
+    "language": "hi",
+    "text": "नया डेबिट कार्ड कितने दिनों में घर पहुंचेगा?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD002-10",
+    "intent_id": "CRD-002",
+    "language": "hi-en",
+    "text": "Mera card toot gaya hai duplicate card issue karo please",
+    "entities": [{"entity": "reason", "value": "toot gaya", "start": 10, "end": 19}]
+  },
+
+  {
+    "utterance_id": "CRD003-01",
+    "intent_id": "CRD-003",
+    "language": "en",
+    "text": "I want to increase the credit limit on my NexBank credit card to 200000",
+    "entities": [{"entity": "requested_amount", "value": "200000", "start": 65, "end": 71}]
+  },
+  {
+    "utterance_id": "CRD003-02",
+    "intent_id": "CRD-003",
+    "language": "en",
+    "text": "Lower my ATM cash withdrawal limit on card ending 4912 to 20000",
+    "entities": [{"entity": "card_last_four", "value": "4912", "start": 50, "end": 54}, {"entity": "requested_amount", "value": "20000", "start": 58, "end": 63}]
+  },
+  {
+    "utterance_id": "CRD003-03",
+    "intent_id": "CRD-003",
+    "language": "hi",
+    "text": "मेरे क्रेडिट कार्ड की लिमिट बढ़ानी है, क्या कोई ऑफर है?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD003-04",
+    "intent_id": "CRD-003",
+    "language": "hi-en",
+    "text": "Mera credit limit increase karne ka eligibility check karke batao",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD003-05",
+    "intent_id": "CRD-003",
+    "language": "hi-en",
+    "text": "Online shopping transaction limit 50000 set karna hai debit card par",
+    "entities": [{"entity": "requested_amount", "value": "50000", "start": 34, "end": 39}]
+  },
+  {
+    "utterance_id": "CRD003-06",
+    "intent_id": "CRD-003",
+    "language": "en",
+    "text": "Check if I have any pre-approved credit limit enhancement offer",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD003-07",
+    "intent_id": "CRD-003",
+    "language": "hi-en",
+    "text": "International usage limit enable aur set kardo 100000 tak",
+    "entities": [{"entity": "requested_amount", "value": "100000", "start": 47, "end": 53}]
+  },
+  {
+    "utterance_id": "CRD003-08",
+    "intent_id": "CRD-003",
+    "language": "en",
+    "text": "Reduce my total credit card limit for security reasons",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD003-09",
+    "intent_id": "CRD-003",
+    "language": "hi",
+    "text": "कार्ड से ऑनलाइन पेमेंट की दैनिक सीमा बदलें",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD003-10",
+    "intent_id": "CRD-003",
+    "language": "hi-en",
+    "text": "Salary slip upload karke credit card limit increase ho sakti hai kya?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "CRD004-01",
+    "intent_id": "CRD-004",
+    "language": "en",
+    "text": "I want to convert my recent iPhone purchase of 65000 into 6 months EMI",
+    "entities": [{"entity": "amount", "value": "65000", "start": 46, "end": 51}, {"entity": "tenure_months", "value": "6", "start": 57, "end": 58}]
+  },
+  {
+    "utterance_id": "CRD004-02",
+    "intent_id": "CRD-004",
+    "language": "en",
+    "text": "What is the interest rate and processing fee for converting credit card bill into EMI?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD004-03",
+    "intent_id": "CRD-004",
+    "language": "hi",
+    "text": "क्रेडिट कार्ड के बिल को आसान किस्तों (ईएमआई) में कैसे बदलें?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD004-04",
+    "intent_id": "CRD-004",
+    "language": "hi-en",
+    "text": "Mera 40000 ka bill EMI me convert kardo 12 months ke liye",
+    "entities": [{"entity": "amount", "value": "40000", "start": 5, "end": 10}, {"entity": "tenure_months", "value": "12", "start": 40, "end": 42}]
+  },
+  {
+    "utterance_id": "CRD004-05",
+    "intent_id": "CRD-004",
+    "language": "hi-en",
+    "text": "Kya main kal ki transaction ko 9 mahine ki EMI me daal sakta hoon?",
+    "entities": [{"entity": "tenure_months", "value": "9", "start": 32, "end": 33}]
+  },
+  {
+    "utterance_id": "CRD004-06",
+    "intent_id": "CRD-004",
+    "language": "en",
+    "text": "Check EMI conversion eligibility on my credit card purchases",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD004-07",
+    "intent_id": "CRD-004",
+    "language": "hi-en",
+    "text": "EMI conversion par foreclosure charges lagte hai kya agar pehle pay kare to?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD004-08",
+    "intent_id": "CRD-004",
+    "language": "en",
+    "text": "Show me monthly installment breakdown for converting 30000 into 3 months",
+    "entities": [{"entity": "amount", "value": "30000", "start": 54, "end": 59}, {"entity": "tenure_months", "value": "3", "start": 65, "end": 66}]
+  },
+  {
+    "utterance_id": "CRD004-09",
+    "intent_id": "CRD-004",
+    "language": "hi",
+    "text": "क्या 15000 की खरीदारी पर बिना ब्याज (No Cost) ईएमआई मिल सकती है?",
+    "entities": [{"entity": "amount", "value": "15000", "start": 5, "end": 10}]
+  },
+  {
+    "utterance_id": "CRD004-10",
+    "intent_id": "CRD-004",
+    "language": "hi-en",
+    "text": "Mera laptop purchase transaction ko installment plan me convert karna hai",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "CRD005-01",
+    "intent_id": "CRD-005",
+    "language": "en",
+    "text": "How many reward points do I currently have on my credit card?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-02",
+    "intent_id": "CRD-005",
+    "language": "en",
+    "text": "I want to redeem 5000 reward points for statement cash credit",
+    "entities": [{"entity": "points", "value": "5000", "start": 17, "end": 21}, {"entity": "action", "value": "REDEEM_CASH", "start": 40, "end": 61}]
+  },
+  {
+    "utterance_id": "CRD005-03",
+    "intent_id": "CRD-005",
+    "language": "hi",
+    "text": "मेरे कार्ड पर कितने रिवॉर्ड पॉइंट्स बचे हैं?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-04",
+    "intent_id": "CRD-005",
+    "language": "hi-en",
+    "text": "Reward points redeem karne ka catalog kahan check karun?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-05",
+    "intent_id": "CRD-005",
+    "language": "hi-en",
+    "text": "Kya mere points is month expire hone wale hai?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-06",
+    "intent_id": "CRD-005",
+    "language": "en",
+    "text": "Redeem my credit card reward points for an Amazon gift voucher",
+    "entities": [{"entity": "action", "value": "REDEEM_VOUCHER", "start": 43, "end": 62}]
+  },
+  {
+    "utterance_id": "CRD005-07",
+    "intent_id": "CRD-005",
+    "language": "hi-en",
+    "text": "1 reward point ka kitna rupee value milta hai cash redemption me?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-08",
+    "intent_id": "CRD-005",
+    "language": "en",
+    "text": "Show me rewards earned in my last credit card billing cycle",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-09",
+    "intent_id": "CRD-005",
+    "language": "hi",
+    "text": "रिवॉर्ड पॉइंट से फ्लाइट टिकट कैसे बुक करें?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CRD005-10",
+    "intent_id": "CRD-005",
+    "language": "hi-en",
+    "text": "Mujhe mere debit card ke loyalty points ka balance bataiye",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "PRD001-01",
+    "intent_id": "PRD-001",
+    "language": "en",
+    "text": "What are the features and minimum balance requirements for NexBank Classic Savings?",
+    "entities": [{"entity": "product_category", "value": "SAVINGS", "start": 58, "end": 82}]
+  },
+  {
+    "utterance_id": "PRD001-02",
+    "intent_id": "PRD-001",
+    "language": "en",
+    "text": "Tell me about the annual fees and benefits of the NexBank Platinum Credit Card",
+    "entities": [{"entity": "product_category", "value": "CREDIT_CARDS", "start": 50, "end": 78}]
+  },
+  {
+    "utterance_id": "PRD001-03",
+    "intent_id": "PRD-001",
+    "language": "hi",
+    "text": "नेक्सबैंक में बचत खाता खोलने के लिए क्या दस्तावेज चाहिए?",
+    "entities": [{"entity": "product_category", "value": "SAVINGS", "start": 14, "end": 23}]
+  },
+  {
+    "utterance_id": "PRD001-04",
+    "intent_id": "PRD-001",
+    "language": "hi-en",
+    "text": "NexBank ke current account me minimum average balance kitna maintain karna hota hai?",
+    "entities": [{"entity": "product_category", "value": "CURRENT", "start": 11, "end": 26}]
+  },
+  {
+    "utterance_id": "PRD001-05",
+    "intent_id": "PRD-001",
+    "language": "hi-en",
+    "text": "Salary account ke kya special benefits aur discounts milte hai debit card par?",
+    "entities": [{"entity": "product_category", "value": "SALARY", "start": 0, "end": 14}]
+  },
+  {
+    "utterance_id": "PRD001-06",
+    "intent_id": "PRD-001",
+    "language": "en",
+    "text": "Does NexBank offer student savings accounts with zero balance?",
+    "entities": [{"entity": "product_category", "value": "SAVINGS", "start": 17, "end": 41}]
+  },
+  {
+    "utterance_id": "PRD001-07",
+    "intent_id": "PRD-001",
+    "language": "hi-en",
+    "text": "Locker facility ke annual rental charges kya hai NexBank branch me?",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD001-08",
+    "intent_id": "PRD-001",
+    "language": "en",
+    "text": "What international lounge access benefits come with the Signature card?",
+    "entities": [{"entity": "product_category", "value": "CREDIT_CARDS", "start": 56, "end": 70}]
+  },
+  {
+    "utterance_id": "PRD001-09",
+    "intent_id": "PRD-001",
+    "language": "hi",
+    "text": "वरिष्ठ नागरिकों के लिए विशेष खाता योजना क्या है?",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD001-10",
+    "intent_id": "PRD-001",
+    "language": "hi-en",
+    "text": "NexBank mobile banking app me kya kya services available hai?",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "PRD002-01",
+    "intent_id": "PRD-002",
+    "language": "en",
+    "text": "What will be my monthly EMI if I borrow a 50 lakh home loan for 20 years?",
+    "entities": [{"entity": "loan_type", "value": "HOME_LOAN", "start": 50, "end": 59}, {"entity": "loan_amount", "value": "50 lakh", "start": 42, "end": 49}, {"entity": "tenure_years", "value": "20", "start": 64, "end": 66}]
+  },
+  {
+    "utterance_id": "PRD002-02",
+    "intent_id": "PRD-002",
+    "language": "en",
+    "text": "Calculate personal loan eligibility for a monthly salary of 85000",
+    "entities": [{"entity": "loan_type", "value": "PERSONAL_LOAN", "start": 10, "end": 23}, {"entity": "monthly_salary", "value": "85000", "start": 60, "end": 65}]
+  },
+  {
+    "utterance_id": "PRD002-03",
+    "intent_id": "PRD-002",
+    "language": "hi",
+    "text": "कार लोन के लिए मेरी पात्रता (eligibility) कितनी होगी?",
+    "entities": [{"entity": "loan_type", "value": "AUTO_LOAN", "start": 0, "end": 7}]
+  },
+  {
+    "utterance_id": "PRD002-04",
+    "intent_id": "PRD-002",
+    "language": "hi-en",
+    "text": "Mera salary 60000 hai, mujhe kitna personal loan mil sakta hai?",
+    "entities": [{"entity": "loan_type", "value": "PERSONAL_LOAN", "start": 35, "end": 48}, {"entity": "monthly_salary", "value": "60000", "start": 12, "end": 17}]
+  },
+  {
+    "utterance_id": "PRD002-05",
+    "intent_id": "PRD-002",
+    "language": "hi-en",
+    "text": "10 lakh home loan par 10 saal ka EMI calculator estimate batao",
+    "entities": [{"entity": "loan_type", "value": "HOME_LOAN", "start": 8, "end": 17}, {"entity": "loan_amount", "value": "10 lakh", "start": 0, "end": 7}, {"entity": "tenure_years", "value": "10", "start": 22, "end": 24}]
+  },
+  {
+    "utterance_id": "PRD002-06",
+    "intent_id": "PRD-002",
+    "language": "en",
+    "text": "What is the minimum CIBIL credit score required for a NexBank home loan?",
+    "entities": [{"entity": "loan_type", "value": "HOME_LOAN", "start": 60, "end": 69}]
+  },
+  {
+    "utterance_id": "PRD002-07",
+    "intent_id": "PRD-002",
+    "language": "hi-en",
+    "text": "Education loan eligibility criteria kya hai abroad studies ke liye?",
+    "entities": [{"entity": "loan_type", "value": "EDUCATION_LOAN", "start": 0, "end": 14}]
+  },
+  {
+    "utterance_id": "PRD002-08",
+    "intent_id": "PRD-002",
+    "language": "en",
+    "text": "Estimate EMI for 8 lakh auto loan at current interest rate for 5 years",
+    "entities": [{"entity": "loan_type", "value": "AUTO_LOAN", "start": 24, "end": 33}, {"entity": "loan_amount", "value": "8 lakh", "start": 17, "end": 23}, {"entity": "tenure_years", "value": "5", "start": 63, "end": 64}]
+  },
+  {
+    "utterance_id": "PRD002-09",
+    "intent_id": "PRD-002",
+    "language": "hi",
+    "text": "होम लोन पर प्रोसेसिंग फीस कितनी लगती है?",
+    "entities": [{"entity": "loan_type", "value": "HOME_LOAN", "start": 0, "end": 8}]
+  },
+  {
+    "utterance_id": "PRD002-10",
+    "intent_id": "PRD-002",
+    "language": "hi-en",
+    "text": "Kya pre-approved personal loan offer available hai mere account par?",
+    "entities": [{"entity": "loan_type", "value": "PERSONAL_LOAN", "start": 17, "end": 30}]
+  },
+
+  {
+    "utterance_id": "PRD003-01",
+    "intent_id": "PRD-003",
+    "language": "en",
+    "text": "What is the current 1-year Fixed Deposit interest rate for senior citizens?",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 27, "end": 40}, {"entity": "tenure", "value": "1-year", "start": 20, "end": 26}, {"entity": "senior_citizen", "value": "true", "start": 59, "end": 74}]
+  },
+  {
+    "utterance_id": "PRD003-02",
+    "intent_id": "PRD-003",
+    "language": "en",
+    "text": "What interest rate will I earn on a 5000 monthly Recurring Deposit for 2 years?",
+    "entities": [{"entity": "deposit_type", "value": "RECURRING_DEPOSIT", "start": 49, "end": 66}, {"entity": "amount", "value": "5000", "start": 36, "end": 40}, {"entity": "tenure", "value": "2 years", "start": 71, "end": 78}]
+  },
+  {
+    "utterance_id": "PRD003-03",
+    "intent_id": "PRD-003",
+    "language": "hi",
+    "text": "नेक्सबैंक में एफडी पर कितना ब्याज मिल रहा है?",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 14, "end": 19}]
+  },
+  {
+    "utterance_id": "PRD003-04",
+    "intent_id": "PRD-003",
+    "language": "hi-en",
+    "text": "Mera 1 lakh rupaye 3 saal ki FD me daalna hai, maturity amount kitna hoga?",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 29, "end": 31}, {"entity": "amount", "value": "1 lakh", "start": 5, "end": 11}, {"entity": "tenure", "value": "3 saal", "start": 19, "end": 25}]
+  },
+  {
+    "utterance_id": "PRD003-05",
+    "intent_id": "PRD-003",
+    "language": "hi-en",
+    "text": "RD rate chart dikhao 6 mahine aur 12 mahine ka",
+    "entities": [{"entity": "deposit_type", "value": "RECURRING_DEPOSIT", "start": 0, "end": 2}]
+  },
+  {
+    "utterance_id": "PRD003-06",
+    "intent_id": "PRD-003",
+    "language": "en",
+    "text": "What is the penalty for premature withdrawal of a fixed deposit?",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 50, "end": 63}]
+  },
+  {
+    "utterance_id": "PRD003-07",
+    "intent_id": "PRD-003",
+    "language": "hi-en",
+    "text": "Tax saver 5 year FD interest rate kitna chal raha hai?",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 17, "end": 19}, {"entity": "tenure", "value": "5 year", "start": 10, "end": 16}]
+  },
+  {
+    "utterance_id": "PRD003-08",
+    "intent_id": "PRD-003",
+    "language": "en",
+    "text": "Show me the interest rates for 400-day special festive deposit scheme",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 47, "end": 61}, {"entity": "tenure", "value": "400-day", "start": 31, "end": 38}]
+  },
+  {
+    "utterance_id": "PRD003-09",
+    "intent_id": "PRD-003",
+    "language": "hi",
+    "text": "रेकरिंग डिपॉजिट (RD) पर वरिष्ठ नागरिकों को अतिरिक्त ब्याज मिलता है क्या?",
+    "entities": [{"entity": "deposit_type", "value": "RECURRING_DEPOSIT", "start": 0, "end": 16}]
+  },
+  {
+    "utterance_id": "PRD003-10",
+    "intent_id": "PRD-003",
+    "language": "hi-en",
+    "text": "Highest FD interest rate kaun se tenure me mil raha hai abhi?",
+    "entities": [{"entity": "deposit_type", "value": "FIXED_DEPOSIT", "start": 11, "end": 13}]
+  },
+
+  {
+    "utterance_id": "PRD004-01",
+    "intent_id": "PRD-004",
+    "language": "en",
+    "text": "What term life insurance plans does NexBank distribute?",
+    "entities": [{"entity": "insurance_type", "value": "LIFE", "start": 5, "end": 24}]
+  },
+  {
+    "utterance_id": "PRD004-02",
+    "intent_id": "PRD-004",
+    "language": "en",
+    "text": "Tell me about family health insurance policies available through the bank",
+    "entities": [{"entity": "insurance_type", "value": "HEALTH", "start": 14, "end": 37}]
+  },
+  {
+    "utterance_id": "PRD004-03",
+    "intent_id": "PRD-004",
+    "language": "hi",
+    "text": "क्या नेक्सबैंक से मोटर (गाड़ी) का बीमा करा सकते हैं?",
+    "entities": [{"entity": "insurance_type", "value": "MOTOR", "start": 17, "end": 31}]
+  },
+  {
+    "utterance_id": "PRD004-04",
+    "intent_id": "PRD-004",
+    "language": "hi-en",
+    "text": "Health insurance policy ka premium calculator kahan check kare?",
+    "entities": [{"entity": "insurance_type", "value": "HEALTH", "start": 0, "end": 16}]
+  },
+  {
+    "utterance_id": "PRD004-05",
+    "intent_id": "PRD-004",
+    "language": "hi-en",
+    "text": "Bank ke through Pradhan Mantri Jeevan Jyoti Bima Yojana kaise le?",
+    "entities": [{"entity": "insurance_type", "value": "LIFE", "start": 16, "end": 55}]
+  },
+  {
+    "utterance_id": "PRD004-06",
+    "intent_id": "PRD-004",
+    "language": "en",
+    "text": "What home insurance coverage is offered for residential property owners?",
+    "entities": [{"entity": "insurance_type", "value": "HOME", "start": 5, "end": 19}]
+  },
+  {
+    "utterance_id": "PRD004-07",
+    "intent_id": "PRD-004",
+    "language": "hi-en",
+    "text": "Term plan me 1 crore coverage ka monthly premium kitna aayega?",
+    "entities": [{"entity": "insurance_type", "value": "LIFE", "start": 0, "end": 9}, {"entity": "coverage_amount", "value": "1 crore", "start": 13, "end": 20}]
+  },
+  {
+    "utterance_id": "PRD004-08",
+    "intent_id": "PRD-004",
+    "language": "en",
+    "text": "Which partner insurance companies does NexBank work with for general insurance?",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD004-09",
+    "intent_id": "PRD-004",
+    "language": "hi",
+    "text": "यात्रा बीमा (Travel Insurance) के नियम क्या हैं?",
+    "entities": [{"entity": "insurance_type", "value": "TRAVEL", "start": 0, "end": 11}]
+  },
+  {
+    "utterance_id": "PRD004-10",
+    "intent_id": "PRD-004",
+    "language": "hi-en",
+    "text": "Credit card ke saath free accidental insurance cover milta hai kya?",
+    "entities": [{"entity": "insurance_type", "value": "ACCIDENTAL", "start": 26, "end": 46}]
+  },
+
+  {
+    "utterance_id": "PRD005-01",
+    "intent_id": "PRD-005",
+    "language": "en",
+    "text": "Where should I invest 10 lakhs right now for maximum guaranteed return?",
+    "entities": [{"entity": "amount", "value": "10 lakhs", "start": 22, "end": 30}]
+  },
+  {
+    "utterance_id": "PRD005-02",
+    "intent_id": "PRD-005",
+    "language": "en",
+    "text": "Which mutual funds will give me 15% annual profit over next 3 years?",
+    "entities": [{"entity": "investment_horizon", "value": "3 years", "start": 59, "end": 66}]
+  },
+  {
+    "utterance_id": "PRD005-03",
+    "intent_id": "PRD-005",
+    "language": "hi",
+    "text": "मुझे शेयर बाजार में पैसे लगाने हैं, कौन से शेयर अच्छे हैं?",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD005-04",
+    "intent_id": "PRD-005",
+    "language": "hi-en",
+    "text": "Mujhe best return pane ke liye portfolio advice chahiye",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD005-05",
+    "intent_id": "PRD-005",
+    "language": "hi-en",
+    "text": "Retirement ke liye mutual fund SIP plan batao jo double kar de paise",
+    "entities": [{"entity": "investment_goal", "value": "Retirement", "start": 0, "end": 10}]
+  },
+  {
+    "utterance_id": "PRD005-06",
+    "intent_id": "PRD-005",
+    "language": "en",
+    "text": "I want to schedule an advisory consultation with a NexBank wealth manager",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD005-07",
+    "intent_id": "PRD-005",
+    "language": "hi-en",
+    "text": "Crypto ya gold me invest karna theek rahega kya abhi?",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD005-08",
+    "intent_id": "PRD-005",
+    "language": "en",
+    "text": "Can you recommend top 3 equity funds for tax saving under section 80C?",
+    "entities": [{"entity": "investment_goal", "value": "tax saving", "start": 41, "end": 51}]
+  },
+  {
+    "utterance_id": "PRD005-09",
+    "intent_id": "PRD-005",
+    "language": "hi",
+    "text": "मेरे भविष्य निधि के पैसे को कहाँ निवेश करना सही होगा?",
+    "entities": []
+  },
+  {
+    "utterance_id": "PRD005-10",
+    "intent_id": "PRD-005",
+    "language": "hi-en",
+    "text": "Mujhe financial planning aur investment strategy discuss karni hai banker se",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "CMP001-01",
+    "intent_id": "CMP-001",
+    "language": "en",
+    "text": "I want to register a formal complaint about rude staff behavior at Indiranagar branch",
+    "entities": [{"entity": "complaint_category", "value": "BRANCH_SERVICE", "start": 44, "end": 64}, {"entity": "branch_name", "value": "Indiranagar", "start": 68, "end": 79}]
+  },
+  {
+    "utterance_id": "CMP001-02",
+    "intent_id": "CMP-001",
+    "language": "en",
+    "text": "Log a complaint regarding illegal debit of SMS alert charges 59 rupees",
+    "entities": [{"entity": "complaint_category", "value": "FEES_AND_CHARGES", "start": 26, "end": 60}, {"entity": "amount", "value": "59", "start": 61, "end": 63}]
+  },
+  {
+    "utterance_id": "CMP001-03",
+    "intent_id": "CMP-001",
+    "language": "hi",
+    "text": "मुझे बैंक शाखा के खिलाफ शिकायत दर्ज करानी है",
+    "entities": [{"entity": "complaint_category", "value": "BRANCH_SERVICE", "start": 5, "end": 14}]
+  },
+  {
+    "utterance_id": "CMP001-04",
+    "intent_id": "CMP-001",
+    "language": "hi-en",
+    "text": "Mobile banking app bar bar crash ho raha hai complaint register karo",
+    "entities": [{"entity": "complaint_category", "value": "DIGITAL_CHANNELS", "start": 0, "end": 18}]
+  },
+  {
+    "utterance_id": "CMP001-05",
+    "intent_id": "CMP-001",
+    "language": "hi-en",
+    "text": "Bina bataye mere account se annual maintenance fee cut kar li dispute complaint karo",
+    "entities": [{"entity": "complaint_category", "value": "FEES_AND_CHARGES", "start": 28, "end": 50}]
+  },
+  {
+    "utterance_id": "CMP001-06",
+    "intent_id": "CMP-001",
+    "language": "en",
+    "text": "File a grievance about checkbook taking more than 3 weeks to arrive",
+    "entities": [{"entity": "complaint_category", "value": "SERVICE_DELAY", "start": 17, "end": 26}]
+  },
+  {
+    "utterance_id": "CMP001-07",
+    "intent_id": "CMP-001",
+    "language": "hi-en",
+    "text": "ATM par security guard ka behavior bohot ganda tha complaint lodge karo",
+    "entities": [{"entity": "complaint_category", "value": "ATM_ISSUES", "start": 0, "end": 3}]
+  },
+  {
+    "utterance_id": "CMP001-08",
+    "intent_id": "CMP-001",
+    "language": "en",
+    "text": "Register a complaint regarding delayed NEFT transfer affecting my business",
+    "entities": [{"entity": "complaint_category", "value": "TRANSACTION_DELAY", "start": 31, "end": 52}]
+  },
+  {
+    "utterance_id": "CMP001-09",
+    "intent_id": "CMP-001",
+    "language": "hi",
+    "text": "कस्टमर केयर से कोई जवाब नहीं मिला, शिकायत दर्ज करें",
+    "entities": [{"entity": "complaint_category", "value": "SERVICE_DELAY", "start": 0, "end": 11}]
+  },
+  {
+    "utterance_id": "CMP001-10",
+    "intent_id": "CMP-001",
+    "language": "hi-en",
+    "text": "Grievance ticket raise karo mera cheque clearance me late hua hai",
+    "entities": [{"entity": "complaint_category", "value": "SERVICE_DELAY", "start": 33, "end": 49}]
+  },
+
+  {
+    "utterance_id": "CMP002-01",
+    "intent_id": "CMP-002",
+    "language": "en",
+    "text": "What is the status of my complaint ticket GRV-2026-9912?",
+    "entities": [{"entity": "complaint_ticket_id", "value": "GRV-2026-9912", "start": 42, "end": 55}]
+  },
+  {
+    "utterance_id": "CMP002-02",
+    "intent_id": "CMP-002",
+    "language": "en",
+    "text": "Check investigation progress on my grievance reference 881029",
+    "entities": [{"entity": "complaint_ticket_id", "value": "881029", "start": 55, "end": 61}]
+  },
+  {
+    "utterance_id": "CMP002-03",
+    "intent_id": "CMP-002",
+    "language": "hi",
+    "text": "मेरी पुरानी शिकायत संख्या 4421 का क्या हुआ?",
+    "entities": [{"entity": "complaint_ticket_id", "value": "4421", "start": 26, "end": 30}]
+  },
+  {
+    "utterance_id": "CMP002-04",
+    "intent_id": "CMP-002",
+    "language": "hi-en",
+    "text": "Mera complaint ticket number CMP88392 ka status batao resolve hua kya?",
+    "entities": [{"entity": "complaint_ticket_id", "value": "CMP88392", "start": 29, "end": 37}]
+  },
+  {
+    "utterance_id": "CMP002-05",
+    "intent_id": "CMP-002",
+    "language": "hi-en",
+    "text": "Do din pehle jo complaint ki thi uska update check karo",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP002-06",
+    "intent_id": "CMP-002",
+    "language": "en",
+    "text": "Has my ATM dispute complaint been resolved yet?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP002-07",
+    "intent_id": "CMP-002",
+    "language": "hi-en",
+    "text": "Grievance status track karna hai mujhe ticket id yaad nahi",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP002-08",
+    "intent_id": "CMP-002",
+    "language": "en",
+    "text": "Track open tickets linked to my registered mobile number",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP002-09",
+    "intent_id": "CMP-002",
+    "language": "hi",
+    "text": "शिकायत की स्थिति जांचिए",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP002-10",
+    "intent_id": "CMP-002",
+    "language": "hi-en",
+    "text": "Koun sa officer meri complaint par kaam kar raha hai batao",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "CMP003-01",
+    "intent_id": "CMP-003",
+    "language": "en",
+    "text": "My complaint GRV-8821 was closed without resolution, I want to escalate to Principal Nodal Officer",
+    "entities": [{"entity": "complaint_ticket_id", "value": "GRV-8821", "start": 13, "end": 21}]
+  },
+  {
+    "utterance_id": "CMP003-02",
+    "intent_id": "CMP-003",
+    "language": "en",
+    "text": "It has been 14 days and no one solved my dispute, escalate this immediately",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP003-03",
+    "intent_id": "CMP-003",
+    "language": "hi",
+    "text": "मेरी शिकायत को उच्च अधिकारी (नोडल ऑफिसर) के पास भेजिए",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP003-04",
+    "intent_id": "CMP-003",
+    "language": "hi-en",
+    "text": "Branch manager ne meri sunwai nahi ki, main ombudsman me escalate karunga",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP003-05",
+    "intent_id": "CMP-003",
+    "language": "hi-en",
+    "text": "Ticket CMP77190 ko higher management ko forward karo unsatisfactory resolution hai",
+    "entities": [{"entity": "complaint_ticket_id", "value": "CMP77190", "start": 7, "end": 15}]
+  },
+  {
+    "utterance_id": "CMP003-06",
+    "intent_id": "CMP-003",
+    "language": "en",
+    "text": "Escalate my ticket to level 2 support, your agent response was totally unhelpful",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP003-07",
+    "intent_id": "CMP-003",
+    "language": "hi-en",
+    "text": "Meri complaint escalate kardo regional nodal officer ko",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP003-08",
+    "intent_id": "CMP-003",
+    "language": "en",
+    "text": "File an appeal against the wrongful rejection of dispute claim 90128",
+    "entities": [{"entity": "complaint_ticket_id", "value": "90128", "start": 63, "end": 68}]
+  },
+  {
+    "utterance_id": "CMP003-09",
+    "intent_id": "CMP-003",
+    "language": "hi",
+    "text": "यह समाधान अस्वीकार्य है, इसे वरिष्ठ प्रबंधन को भेजें",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP003-10",
+    "intent_id": "CMP-003",
+    "language": "hi-en",
+    "text": "Level 3 escalation form generate karo mera problem solve nahi hua",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "CMP004-01",
+    "intent_id": "CMP-004",
+    "language": "en",
+    "text": "I want to give 5 stars rating, your automated agent solved my problem fast!",
+    "entities": [{"entity": "rating", "value": "5", "start": 15, "end": 16}]
+  },
+  {
+    "utterance_id": "CMP004-02",
+    "intent_id": "CMP-004",
+    "language": "en",
+    "text": "Feedback: The mobile app UI is very confusing after the new update",
+    "entities": [{"entity": "sentiment", "value": "NEGATIVE", "start": 0, "end": 8}]
+  },
+  {
+    "utterance_id": "CMP004-03",
+    "intent_id": "CMP-004",
+    "language": "hi",
+    "text": "आपकी सेवा बहुत अच्छी लगी, धन्यवाद",
+    "entities": [{"entity": "sentiment", "value": "POSITIVE", "start": 0, "end": 24}]
+  },
+  {
+    "utterance_id": "CMP004-04",
+    "intent_id": "CMP-004",
+    "language": "hi-en",
+    "text": "Bohot achha assistant hai, 5 star rating dunga",
+    "entities": [{"entity": "rating", "value": "5", "start": 26, "end": 27}]
+  },
+  {
+    "utterance_id": "CMP004-05",
+    "intent_id": "CMP-004",
+    "language": "hi-en",
+    "text": "Feedback submit karna hai, passbook printing machine hamesha band rehti hai",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP004-06",
+    "intent_id": "CMP-004",
+    "language": "en",
+    "text": "Please add dark mode feature in the mobile banking app, here is my suggestion",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP004-07",
+    "intent_id": "CMP-004",
+    "language": "hi-en",
+    "text": "Customer service response time thoda improve karne ki zarurat hai",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP004-08",
+    "intent_id": "CMP-004",
+    "language": "en",
+    "text": "Giving 1 star rating because card replacement took 20 days",
+    "entities": [{"entity": "rating", "value": "1", "start": 7, "end": 8}]
+  },
+  {
+    "utterance_id": "CMP004-09",
+    "intent_id": "CMP-004",
+    "language": "hi",
+    "text": "नेक्सबैंक की बैंकिंग सुविधाओं पर अपना फीडबैक देना चाहता हूँ",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP004-10",
+    "intent_id": "CMP-004",
+    "language": "hi-en",
+    "text": "Overall experience satisfactory raha, thank you for quick help",
+    "entities": [{"entity": "sentiment", "value": "POSITIVE", "start": 0, "end": 35}]
+  },
+
+  {
+    "utterance_id": "CMP005-01",
+    "intent_id": "CMP-005",
+    "language": "en",
+    "text": "Can I request a supervisor callback today between 3 PM and 5 PM?",
+    "entities": [{"entity": "preferred_time", "value": "3 PM to 5 PM", "start": 50, "end": 63}]
+  },
+  {
+    "utterance_id": "CMP005-02",
+    "intent_id": "CMP-005",
+    "language": "en",
+    "text": "I want to speak with a human branch manager, please schedule a call",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP005-03",
+    "intent_id": "CMP-005",
+    "language": "hi",
+    "text": "कृपया किसी सीनियर मैनेजर से मुझे फोन करवाइए",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP005-04",
+    "intent_id": "CMP-005",
+    "language": "hi-en",
+    "text": "Mujhe supervisor ka callback arrange kardo urgent matter hai",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP005-05",
+    "intent_id": "CMP-005",
+    "language": "hi-en",
+    "text": "Bot se baat nahi karni, human officer se call back kab milega?",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP005-06",
+    "intent_id": "CMP-005",
+    "language": "en",
+    "text": "Schedule a phone consultation with a loan supervisor regarding rejection",
+    "entities": [{"entity": "topic", "value": "loan rejection", "start": 52, "end": 66}]
+  },
+  {
+    "utterance_id": "CMP005-07",
+    "intent_id": "CMP-005",
+    "language": "hi-en",
+    "text": "Meri registered number par customer care manager ka phone karwao kal subah",
+    "entities": [{"entity": "preferred_time", "value": "tomorrow morning", "start": 65, "end": 74}]
+  },
+  {
+    "utterance_id": "CMP005-08",
+    "intent_id": "CMP-005",
+    "language": "en",
+    "text": "Book a callback slot for wealth management inquiry",
+    "entities": [{"entity": "topic", "value": "wealth management", "start": 25, "end": 42}]
+  },
+  {
+    "utterance_id": "CMP005-09",
+    "intent_id": "CMP-005",
+    "language": "hi",
+    "text": "शाखा प्रबंधक से सीधे बात करने का समय निर्धारित करें",
+    "entities": []
+  },
+  {
+    "utterance_id": "CMP005-10",
+    "intent_id": "CMP-005",
+    "language": "hi-en",
+    "text": "Main bot se satisfy nahi hoon supervisor call back lagwao",
+    "entities": []
+  },
+
+  {
+    "utterance_id": "SEC001-01",
+    "intent_id": "SEC-001",
+    "language": "en",
+    "text": "Fraud alert! Someone just withdrew 25000 from my account without my OTP!",
+    "entities": [{"entity": "amount", "value": "25000", "start": 35, "end": 40}, {"entity": "affected_medium", "value": "NET_BANKING", "start": 49, "end": 56}]
+  },
+  {
+    "utterance_id": "SEC001-02",
+    "intent_id": "SEC-001",
+    "language": "en",
+    "text": "My card was cloned and unauthorized international transactions are happening, stop them!",
+    "entities": [{"entity": "affected_medium", "value": "CARD", "start": 3, "end": 7}]
+  },
+  {
+    "utterance_id": "SEC001-03",
+    "intent_id": "SEC-001",
+    "language": "hi",
+    "text": "मेरे खाते से किसी ने धोखाधड़ी से 50000 रुपये निकाल लिए हैं, तुरंत मदद करें!",
+    "entities": [{"entity": "amount", "value": "50000", "start": 34, "end": 39}]
+  },
+  {
+    "utterance_id": "SEC001-04",
+    "intent_id": "SEC-001",
+    "language": "hi-en",
+    "text": "Fraud hua hai mere account par, bina meri permission ke paise cut rahe hai",
+    "entities": []
+  },
+  {
+    "utterance_id": "SEC001-05",
+    "intent_id": "SEC-001",
+    "language": "hi-en",
+    "text": "Mera phone chori ho gaya aur UPI se unauthorized payment ho gayi hai",
+    "entities": [{"entity": "affected_medium", "value": "UPI", "start": 29, "end": 32}]
+  },
+  {
+    "utterance_id": "SEC001-06",
+    "intent_id": "SEC-001",
+    "language": "en",
+    "text": "Emergency! I received debit notification of 15000 for a purchase I never made",
+    "entities": [{"entity": "amount", "value": "15000", "start": 44, "end": 49}]
+  },
+  {
+    "utterance_id": "SEC001-07",
+    "intent_id": "SEC-001",
+    "language": "hi-en",
+    "text": "Account hack ho gaya lagta hai kisi ne password change kar diya aur paise transfer kiye",
+    "entities": []
+  },
+  {
+    "utterance_id": "SEC001-08",
+    "intent_id": "SEC-001",
+    "language": "en",
+    "text": "Freeze all my accounts immediately, I am victim of a cyber financial fraud",
+    "entities": []
+  },
+  {
+    "utterance_id": "SEC001-09",
+    "intent_id": "SEC-001",
+    "language": "hi",
+    "text": "साइबर फ्रॉड की शिकायत दर्ज करनी है, कार्ड और खाता सीज करें",
+    "entities": []
+  },
+  {
+    "utterance_id": "SEC001-10",
+    "intent_id": "SEC-001",
+    "language": "hi-en",
+    "text": "Kisi ne mere card details chura ke online transaction kar diya fraud report karo",
+    "entities": [{"entity": "affected_medium", "value": "CARD", "start": 13, "end": 17}]
+  },
+
+  {
+    "utterance_id": "SEC002-01",
+    "intent_id": "SEC-002",
+    "language": "en",
+    "text": "I received a fake SMS asking me to update PAN on http://nexbank-update.xyz",
+    "entities": [{"entity": "phishing_channel", "value": "SMS", "start": 18, "end": 21}, {"entity": "link", "value": "http://nexbank-update.xyz", "start": 49, "end": 74}]
+  },
+  {
+    "utterance_id": "SEC002-02",
+    "intent_id": "SEC-002",
+    "language": "en",
+    "text": "Someone called claiming to be NexBank manager asking for my OTP and debit card PIN",
+    "entities": [{"entity": "phishing_channel", "value": "CALL", "start": 8, "end": 14}]
+  },
+  {
+    "utterance_id": "SEC002-03",
+    "intent_id": "SEC-002",
+    "language": "hi",
+    "text": "मुझे एक फर्जी मैसेज आया है जिसमें खाता बंद होने की धमकी दी गई है",
+    "entities": [{"entity": "phishing_channel", "value": "SMS", "start": 11, "end": 16}]
+  },
+  {
+    "utterance_id": "SEC002-04",
+    "intent_id": "SEC-002",
+    "language": "hi-en",
+    "text": "WhatsApp par fake message aaya hai lottery aur bank KYC update ka link dekar",
+    "entities": [{"entity": "phishing_channel", "value": "WHATSAPP", "start": 0, "end": 8}]
+  },
+  {
+    "utterance_id": "SEC002-05",
+    "intent_id": "SEC-002",
+    "language": "hi-en",
+    "text": "Scam email report karna hai spoofed NexBank address se",
+    "entities": [{"entity": "phishing_channel", "value": "EMAIL", "start": 5, "end": 10}]
+  },
+  {
+    "utterance_id": "SEC002-06",
+    "intent_id": "SEC-002",
+    "language": "en",
+    "text": "Report phishing website imitating NexBank net banking login page",
+    "entities": []
+  },
+  {
+    "utterance_id": "SEC002-07",
+    "intent_id": "SEC-002",
+    "language": "hi-en",
+    "text": "Fake call aayi thi +919988112233 se bol raha tha account block ho jayega",
+    "entities": [{"entity": "phishing_channel", "value": "CALL", "start": 5, "end": 9}, {"entity": "phone_number", "value": "+919988112233", "start": 19, "end": 33}]
+  },
+  {
+    "utterance_id": "SEC002-08",
+    "intent_id": "SEC-002",
+    "language": "en",
+    "text": "Where do I forward suspicious phishing SMS for cybersecurity investigation?",
+    "entities": [{"entity": "phishing_channel", "value": "SMS", "start": 39, "end": 42}]
+  },
+  {
+    "utterance_id": "SEC002-09",
+    "intent_id": "SEC-002",
+    "language": "hi",
+    "text": "धोखाधड़ी वाली फर्जी वेबसाइट की रिपोर्ट दर्ज करें",
+    "entities": []
+  },
+  {
+    "utterance_id": "SEC002-10",
+    "intent_id": "SEC-002",
+    "language": "hi-en",
+    "text": "Mujhe suspicious message aaya hai jisme link par click karne ko bol rahe hai",
+    "entities": [{"entity": "phishing_channel", "value": "SMS", "start": 17, "end": 24}]
+  },
+
+  {
+    "utterance_id": "SEC003-01",
+    "intent_id": "SEC-003",
+    "language": "en",
+    "text": "I forgot my net banking password and need to reset it",
+    "entities": [{"entity": "credential_type", "value": "NET_BANKING_PASSWORD", "start": 12, "end": 32}]
+  },
+  {
+    "utterance_id": "SEC003-02",
+    "intent_id": "SEC-003",
+    "language": "en",
+    "text": "How do I generate a new ATM PIN for my debit card ending in 4912?",
+    "entities": [{"entity": "credential_type", "value": "DEBIT_CARD_PIN", "start": 24, "end": 31}, {"entity": "card_last_four", "value": "4912", "start": 60, "end": 64}]
+  },
+  {
+    "utterance_id": "SEC003-03",
+    "intent_id": "SEC-003",
+    "language": "hi",
+    "text": "मैं अपना मोबाइल बैंकिंग का एमपिन (MPIN) भूल गया हूँ, रीसेट कैसे करूँ?",
+    "entities": [{"entity": "credential_type", "value": "MOBILE_MPIN", "start": 26, "end": 37}]
+  },
+  {
+    "utterance_id": "SEC003-04",
+    "intent_id": "SEC-003",
+    "language": "hi-en",
+    "text": "Net banking password reset karne ka link bhej do mere registered mobile par",
+    "entities": [{"entity": "credential_type", "value": "NET_BANKING_PASSWORD", "start": 0, "end": 20}]
+  },
+  {
+    "utterance_id": "SEC003-05",
+    "intent_id": "SEC-003",
+    "language": "hi-en",
+    "text": "Mera login password expire ho gaya hai naya password create karna hai",
+    "entities": [{"entity": "credential_type", "value": "NET_BANKING_PASSWORD", "start": 5, "end": 19}]
+  },
+  {
+    "utterance_id": "SEC003-06",
+    "intent_id": "SEC-003",
+    "language": "en",
+    "text": "Reset the transaction PIN for my mobile app UPI payments",
+    "entities": [{"entity": "credential_type", "value": "UPI_PIN", "start": 10, "end": 25}]
+  },
+  {
+    "utterance_id": "SEC003-07",
+    "intent_id": "SEC-003",
+    "language": "hi-en",
+    "text": "ATM card ka green PIN kaise generate kare bina ATM machine jaye?",
+    "entities": [{"entity": "credential_type", "value": "DEBIT_CARD_PIN", "start": 12, "end": 21}]
+  },
+  {
+    "utterance_id": "SEC003-08",
+    "intent_id": "SEC-003",
+    "language": "en",
+    "text": "Unlock my internet banking user ID after 3 failed password attempts",
+    "entities": [{"entity": "credential_type", "value": "USER_ID_LOCKOUT", "start": 10, "end": 34}]
+  },
+  {
+    "utterance_id": "SEC003-09",
+    "intent_id": "SEC-003",
+    "language": "hi",
+    "text": "एटीएम कार्ड का पिन कोड बदलें",
+    "entities": [{"entity": "credential_type", "value": "DEBIT_CARD_PIN", "start": 15, "end": 23}]
+  },
+  {
+    "utterance_id": "SEC003-10",
+    "intent_id": "SEC-003",
+    "language": "hi-en",
+    "text": "App ka 6 digit MPIN change karna hai security update ke liye",
+    "entities": [{"entity": "credential_type", "value": "MOBILE_MPIN", "start": 15, "end": 19}]
+  },
+
+  {
+    "utterance_id": "SEC004-01",
+    "intent_id": "SEC-004",
+    "language": "en",
+    "text": "Yes, I recognize and authorized the 12000 transaction on my card",
+    "entities": [{"entity": "confirmation_status", "value": "AUTHORIZED", "start": 0, "end": 3}, {"entity": "amount", "value": "12000", "start": 36, "end": 41}]
+  },
+  {
+    "utterance_id": "SEC004-02",
+    "intent_id": "SEC-004",
+    "language": "en",
+    "text": "No, I did not make that 45000 international purchase, it was not me!",
+    "entities": [{"entity": "confirmation_status", "value": "UNAUTHORIZED", "start": 0, "end": 2}, {"entity": "amount", "value": "45000", "start": 24, "end": 29}]
+  },
+  {
+    "utterance_id": "SEC004-03",
+    "intent_id": "SEC-004",
+    "language": "hi",
+    "text": "हाँ, बैंक से आए अलर्ट का लेन-देन मैंने ही किया था",
+    "entities": [{"entity": "confirmation_status", "value": "AUTHORIZED", "start": 0, "end": 3}]
+  },
+  {
+    "utterance_id": "SEC004-04",
+    "intent_id": "SEC-004",
+    "language": "hi-en",
+    "text": "Mujhe SMS alert mila suspicious transaction ka, maine wo payment nahi kiya",
+    "entities": [{"entity": "confirmation_status", "value": "UNAUTHORIZED", "start": 48, "end": 74}]
+  },
+  {
+    "utterance_id": "SEC004-05",
+    "intent_id": "SEC-004",
+    "language": "hi-en",
+    "text": "Yes that was me trying to buy air tickets in Dubai, please approve it",
+    "entities": [{"entity": "confirmation_status", "value": "AUTHORIZED", "start": 0, "end": 3}]
+  },
+  {
+    "utterance_id": "SEC004-06",
+    "intent_id": "SEC-004",
+    "language": "en",
+    "text": "Confirming suspicious activity alert REF99201: unauthorized transaction",
+    "entities": [{"entity": "alert_reference_id", "value": "REF99201", "start": 36, "end": 44}, {"entity": "confirmation_status", "value": "UNAUTHORIZED", "start": 46, "end": 58}]
+  },
+  {
+    "utterance_id": "SEC004-07",
+    "intent_id": "SEC-004",
+    "language": "hi-en",
+    "text": "Bank alert ka reply de raha hoon: maine koi 8000 ka POS swipe nahi kiya",
+    "entities": [{"entity": "confirmation_status", "value": "UNAUTHORIZED", "start": 34, "end": 71}, {"entity": "amount", "value": "8000", "start": 44, "end": 48}]
+  },
+  {
+    "utterance_id": "SEC004-08",
+    "intent_id": "SEC-004",
+    "language": "en",
+    "text": "I received an automated verification call, I confirm this transfer was authorized",
+    "entities": [{"entity": "confirmation_status", "value": "AUTHORIZED", "start": 71, "end": 81}]
+  },
+  {
+    "utterance_id": "SEC004-09",
+    "intent_id": "SEC-004",
+    "language": "hi",
+    "text": "नहीं, यह भुगतान मैंने नहीं किया, तुरंत रोकें",
+    "entities": [{"entity": "confirmation_status", "value": "UNAUTHORIZED", "start": 0, "end": 5}]
+  },
+  {
+    "utterance_id": "SEC004-10",
+    "intent_id": "SEC-004",
+    "language": "hi-en",
+    "text": "Flagged transaction mera hi hai, card unblock kardo taaki payment complete ho sake",
+    "entities": [{"entity": "confirmation_status", "value": "AUTHORIZED", "start": 20, "end": 30}]
+  }
+]

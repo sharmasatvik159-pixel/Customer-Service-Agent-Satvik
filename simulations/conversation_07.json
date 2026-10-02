@@ -1,0 +1,47 @@
+{
+  "conversation_id": "SIM-CONV-07",
+  "title": "Emergency Airport Debit Card Block & Issuance",
+  "intent_domain": "Card Management",
+  "primary_intent": "CRD-001",
+  "customer_profile": {
+    "customer_id": "CUST-55109",
+    "tier": "PREMIER",
+    "initial_auth_state": "BIOMETRIC_VERIFIED"
+  },
+  "design_patterns_demonstrated": [
+    "Confirmation-Before-Action Pattern",
+    "Progressive Disclosure Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Robotic Loop",
+    "Empathy Bypass"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "I'm boarding an international flight at Delhi airport and I left my debit card at the duty-free counter! Block it right now permanently!",
+      "metadata": {
+        "intent": "CRD-001",
+        "confidence": 0.99,
+        "sentiment_score": -0.7
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "PERMANENT BLOCK CONFIRMED: Your NexBank World Debit Card ending in 1092 has been permanently blocked as of 13:05 IST. No further transactions can occur. Reference #BLK-99410. Safe travels! Would you like a digital replacement card enabled on Apple Pay / Google Wallet immediately?",
+      "metadata": {
+        "action": "PERMANENT_CARD_BLOCK",
+        "template_id": "TPL-008",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "card_status": "PERMANENTLY_BLOCKED",
+    "statutory_retention_years": 7
+  }
+}

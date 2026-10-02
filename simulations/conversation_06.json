@@ -1,0 +1,67 @@
+{
+  "conversation_id": "SIM-CONV-06",
+  "title": "Hinglish Code-Switching with Multi-Session Context",
+  "intent_domain": "Card Management",
+  "primary_intent": "CRD-002",
+  "customer_profile": {
+    "customer_id": "CUST-11928",
+    "tier": "RETAIL_CLASSIC",
+    "initial_auth_state": "BIOMETRIC_VERIFIED",
+    "previous_session_id": "SESS-20261001-4412"
+  },
+  "design_patterns_demonstrated": [
+    "Context Carry-Over Pattern",
+    "Confirmation-Before-Action Pattern"
+  ],
+  "anti_patterns_avoided": [
+    "Authentication Theatre",
+    "Info Dump"
+  ],
+  "dialogue_turns": [
+    {
+      "turn": 1,
+      "speaker": "USER",
+      "utterance": "Namaste, kal maine apna debit card temporary block karwaya tha phone par. Ab mujhe new replacement card order karna hai.",
+      "metadata": {
+        "intent": "CRD-002",
+        "confidence": 0.96,
+        "language": "Hinglish",
+        "sentiment_score": 0.15
+      }
+    },
+    {
+      "turn": 2,
+      "speaker": "AGENT",
+      "utterance": "Namaste! Haan, main dekh sakti hoon ki aapka Platinum Debit Card (ending in 3312) kal block kiya gaya tha. Main aapke registered address (Flat 402, Powai, Mumbai) par new chip-and-PIN replacement card order kar sakti hoon. Kya main order confirm karoon?",
+      "metadata": {
+        "action": "RESUME_CONTEXT_HINGLISH",
+        "template_id": "TPL-006",
+        "design_pattern": "Context Carry-Over (identified yesterday's block event)"
+      }
+    },
+    {
+      "turn": 3,
+      "speaker": "USER",
+      "utterance": "Haan bilkul, usi address par bhej dijiye. Kitne din mein aayega?",
+      "metadata": {
+        "intent": "CONFIRM_ACTION",
+        "sentiment_score": 0.5
+      }
+    },
+    {
+      "turn": 4,
+      "speaker": "AGENT",
+      "utterance": "Aapka new contactless card order ho gaya hai. Reference Number: #CRD-REP-90812. Yeh 3-5 business days mein deliver ho jayega with speed post tracking. Courier dispatch hone par SMS tracking link bhej diya jayega.",
+      "metadata": {
+        "action": "DISPATCH_CARD",
+        "resolution_status": "RESOLVED"
+      }
+    }
+  ],
+  "final_outcome": "RESOLVED_FIRST_CONTACT",
+  "csat_score": 5,
+  "audit_compliance": {
+    "pii_masked": true,
+    "statutory_retention_years": 7
+  }
+}
